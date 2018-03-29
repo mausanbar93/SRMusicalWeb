@@ -1,0 +1,212 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "model_usuario"
+    },
+    "name": "MyModel",
+    "configAlternates": {
+        "designer|userClassName": "string"
+    },
+    "designerId": "364a2ea6-6308-43aa-ba13-201a9931360d",
+    "cn": [
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id"
+            },
+            "name": "MyField37",
+            "configAlternates": {
+                "name": "string"
+            },
+            "designerId": "6b14e12f-9ea1-4757-8a7a-07c45a80cf02"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "nombre"
+            },
+            "name": "MyField7",
+            "configAlternates": {
+                "name": "string"
+            },
+            "designerId": "02da9d25-431d-4e57-bc08-30511ff2b431"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "apellido"
+            },
+            "name": "MyField8",
+            "configAlternates": {
+                "name": "string"
+            },
+            "designerId": "55832e31-4ca9-4fcd-b7e0-dd50b912cc41"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "cuenta"
+            },
+            "name": "MyField41",
+            "configAlternates": {
+                "name": "string"
+            },
+            "designerId": "11221f4f-bacc-4485-a33a-057ca5acb199"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "contrasena"
+            },
+            "name": "MyField42",
+            "configAlternates": {
+                "name": "string"
+            },
+            "designerId": "83c571f0-5134-417b-8588-aa4c8703401b"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "ocupacion"
+            },
+            "name": "MyField39",
+            "configAlternates": {
+                "name": "string"
+            },
+            "designerId": "9a352d36-09a6-46db-a802-93be854c6763"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "allowNull": true,
+                "defaultValue": [
+                    "null"
+                ],
+                "name": "correo"
+            },
+            "name": "MyField10",
+            "configAlternates": {
+                "name": "string",
+                "allowNull": "boolean",
+                "defaultValue": "object"
+            },
+            "designerId": "392ecc9c-c1c8-420d-abdd-f56b996037b8"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "allowNull": true,
+                "defaultValue": [
+                    "null"
+                ],
+                "name": "numeroCelular"
+            },
+            "name": "MyField43",
+            "configAlternates": {
+                "name": "string",
+                "allowNull": "boolean",
+                "defaultValue": "object"
+            },
+            "designerId": "e028221b-8ce5-4298-8490-923dddf146ca"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "allowNull": true,
+                "defaultValue": [
+                    "null"
+                ],
+                "name": "direccion"
+            },
+            "name": "MyField44",
+            "configAlternates": {
+                "name": "string",
+                "allowNull": "boolean",
+                "defaultValue": "object"
+            },
+            "designerId": "a70afef5-f4cf-48bf-8cfb-112642123149"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "fechaNacimiento"
+            },
+            "name": "MyField11",
+            "configAlternates": {
+                "name": "string"
+            },
+            "designerId": "4dd8d4af-9cee-4096-af56-4b9768fa99b8"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "habilitado"
+            },
+            "name": "MyField38",
+            "configAlternates": {
+                "name": "string"
+            },
+            "designerId": "14929b47-9d75-40d5-99b3-ebaa37bad20e"
+        }
+    ]
+}

@@ -1,0 +1,105 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "store_usuario",
+        "model": "model_usuario",
+        "storeId": "store_usuario"
+    },
+    "name": "MyJsonStore",
+    "configAlternates": {
+        "designer|userClassName": "string",
+        "model": "model",
+        "storeId": "string"
+    },
+    "designerId": "7efe682b-1ff9-45cd-8ead-fa782a90d5c5",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "api": [
+                    "{",
+                    "read: 'usuariocontrolador/listar',",
+                    "create: 'usuariocontrolador/crear',",
+                    "update: 'usuariocontrolador/actualizar',",
+                    "destroy: 'usuariocontrolador/eliminar'",
+                    "}"
+                ]
+            },
+            "name": "MyAjaxProxy8",
+            "configAlternates": {
+                "api": "object"
+            },
+            "designerId": "00713503-c509-4263-8065-af4696b57431",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "messageProperty": "message",
+                        "rootProperty": "data"
+                    },
+                    "name": "MyJsonReader8",
+                    "configAlternates": {
+                        "messageProperty": "string",
+                        "rootProperty": "string"
+                    },
+                    "designerId": "a2d3442b-aa97-43b7-ac08-663d8f71efe0"
+                },
+                {
+                    "type": "Ext.data.writer.Json",
+                    "reference": {
+                        "name": "writer",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowSingle": false
+                    },
+                    "name": "MyJsonWriter1",
+                    "configAlternates": {
+                        "allowSingle": "boolean"
+                    },
+                    "designerId": "7ce8da4a-0740-4b8e-9d69-221240cab7df"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onAjaxException",
+                        "implHandler": [
+                            "SRMusicalWeb.app.showError(proxy, operation, this);"
+                        ],
+                        "name": "exception",
+                        "scope": "me"
+                    },
+                    "name": "onAjaxException",
+                    "configAlternates": {
+                        "fn": "string",
+                        "implHandler": "code",
+                        "name": "string",
+                        "scope": "string"
+                    },
+                    "designerId": "0926f59b-fa42-42c9-8410-042610de3080"
+                }
+            ]
+        }
+    ]
+}

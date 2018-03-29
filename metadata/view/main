@@ -1,0 +1,48 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": "stretch",
+        "designer|initialView": true,
+        "designer|userAlias": "main",
+        "designer|userClassName": "main",
+        "id": "main",
+        "layout": "vbox"
+    },
+    "name": "MyViewport",
+    "designerId": "a2ad86d4-3d90-42a4-8dd8-a154cf272606",
+    "viewControllerInstanceId": "cdcc4b8b-e50b-4b92-82a5-97c79e46e67b",
+    "viewModelInstanceId": "3a8a3843-a300-435d-b0da-49542849610c",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "ctn_login1",
+            "designerId": "40fe3ee8-ff7b-4f09-8e6e-f881da146d2c",
+            "masterInstanceId": "8cac41e1-dbb9-4d05-bdec-3ba85070bc31"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "hidden": true,
+                "layout|flex": 1
+            },
+            "name": "main_aplicacion1",
+            "designerId": "624184d1-a729-483d-89ab-5a4b03f9652a",
+            "masterInstanceId": "44e0fd7f-4c1e-4bd9-9494-684360d174f1"
+        }
+    ]
+}

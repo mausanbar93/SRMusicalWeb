@@ -1,0 +1,125 @@
+/*Variables globales para los estilos del menu lateral principal*/
+:root{
+    --color-panel: #00246a;
+    --color-font-title: #ffffff;
+}
+.login-panel{
+    background: url('../images/fondo_principal_blue.jpg') no-repeat center center fixed;
+    background-size: cover !important; 
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    height:100vh !important;
+    width:100vw !important;
+}
+.login-form{
+    border-radius: 5px;
+    border-color: 1px solid #458c21;
+    margin: 150px 0px 5px 350px;
+    -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.3); 
+}
+.botones-general{
+    border: solid white;
+    border-radius: 10px;
+    margin: 50px 20px 5px 5px;
+    padding: 10px;
+    -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.3); 
+}
+.botones-general-tareas{
+    border: solid white;
+    border-radius: 10px;
+    margin: 10px 20px 10px 10px;
+    padding: 10px;
+    -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.3); 
+}
+.imagen-botones-general{
+    width: 250px;
+    height: 250px;
+}
+.imagen-botones-tareas{
+    width: 180px;
+    height: 180px;
+}
+.ctn-principal{
+    border: solid white;
+    margin:0px 0px 0px 0px;
+    padding: 5px;
+    -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.3); 
+}
+.x-toast-header-title-default{
+    color: var(--color-font-title) !important;
+    text-align: center;
+    font-size: large;
+}
+.x-toast{
+    background-color: var(--color-panel) !important;
+    border-color: var(--color-panel) !important;
+}
+.x-window-header-default{
+    background-color: var(--color-panel) !important;
+    border-color: var(--color-panel) !important;
+}
+.x-window-header-default .x-tool-img{
+    background-color: none !important;
+}
+.x-window-header-title-default{
+    color: var(--color-font-title) !important;
+    text-align: center;
+    font-size: large;
+}
+.x-window-default{
+    background-color: var(--color-panel) !important;
+    border-color: var(--color-panel) !important;
+}
+.x-panel-header-default{
+    background-color: var(--color-panel) !important;
+    border-color: var(--color-panel) !important;
+}
+.x-panel-header-title-default{
+    color: var(--color-font-title);
+    text-align: center;
+    font-size: large;
+}
+.x-btn-default-small{
+    background-color: var(--color-panel) !important;
+    border-color: var(--color-panel) !important;
+    background-image: none !important;
+}
+.x-css-shadow{
+    box-shadow: none !important;
+}
+
+/* - Estilo barra fortaleza contraseña - */
+.ctn-password{
+    background-color: white;
+    width: 17px; 
+    height: 7px;
+    margin: 0px 22px 0px 0px;
+}
+.ctn-password-debil{
+    background-color:red !important;
+}
+.ctn-password-normal{
+    background-color:#35baf6 !important;
+}
+.ctn-password-fuerte{
+    background-color:#2fce37 !important;
+}
+.texto-password{/* tamaño texto informativo en cambiar contraseña*/
+    font-size: 11px;
+}
+
+/* - Estilo de la flecha para el tip de campos faltantes - */
+.arrow-tip{
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;    
+    border-top: 10px solid #f00;
+}

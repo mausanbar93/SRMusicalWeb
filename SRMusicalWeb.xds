@@ -1,0 +1,75 @@
+{
+    "name": "SRMusicalWeb",
+    "settings": {
+        "cmd": {
+            "license": "commercial",
+            "cmdVersion": "6.2.1.29",
+            "frameworkVersion": "6.0.2.437"
+        },
+        "urlPrefix": "http://localhost:1841/",
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "exportPath": "",
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "spacesToIndent": 4,
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "installStatus": "Not Installed",
+        "sdkPath": "",
+        "lastBuildSelection": {
+            "value": "webBuild",
+            "display": "Build web app"
+        },
+        "urlPrefixTemplate": "http://localhost:{port}/{path}"
+    },
+    "xdsVersion": "3.5.1",
+    "xdsBuild": 348,
+    "schemaVersion": 1,
+    "upgradeVersion": 310000000001,
+    "framework": "ext60",
+    "viewOrderMap": {
+        "view": [
+            "44e0fd7f-4c1e-4bd9-9494-684360d174f1",
+            "caf9ff22-74ba-4cda-b955-6f3c2544755f",
+            "febba204-b9f4-4fb7-864e-012010bc1cb5",
+            "8cac41e1-dbb9-4d05-bdec-3ba85070bc31",
+            "e6dfa02c-c89c-4c03-9854-5e76613fa866",
+            "a986cd08-9304-4910-9f7f-08acb0259bc2",
+            "1c161978-a859-4768-a916-bb115efb9955",
+            "62532577-921a-4de9-8524-6c91851a6131",
+            "b1382781-8d10-4db0-80de-e46b94ebfb1d",
+            "2f34a62b-0846-46f4-a7f8-a68c0d290b00",
+            "c3974ab8-3ddd-4ab2-8c20-deb09277b31d",
+            "ddc0df51-8942-4314-bd91-cac1c98c86a1",
+            "a2ad86d4-3d90-42a4-8dd8-a154cf272606",
+            "3a8a3843-a300-435d-b0da-49542849610c",
+            "cdcc4b8b-e50b-4b92-82a5-97c79e46e67b"
+        ],
+        "store": [
+            "7efe682b-1ff9-45cd-8ead-fa782a90d5c5",
+            "3d074f34-ea6d-40ba-8f6a-28a904e878a2"
+        ],
+        "controller": [],
+        "model": [
+            "364a2ea6-6308-43aa-ba13-201a9931360d",
+            "4ad3f944-bc00-4072-b763-5367e772cbbf",
+            "66d021bf-5498-4f6e-b68f-466d6d3e8371"
+        ],
+        "resource": [
+            "d6da57da-9937-4be9-8a51-698f582ebebe",
+            "cd9aee81-13f7-439b-8443-18998bd51803",
+            "083486ef-3adc-4e8e-b7ac-80114b326c52"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

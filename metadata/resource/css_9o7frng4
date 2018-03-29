@@ -1,0 +1,20 @@
+{
+    "type": "cssresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "css_9o7frng4",
+        "id": "Styles",
+        "url": "resources/css/styles.css"
+    },
+    "name": "css",
+    "configAlternates": {
+        "designer|userClassName": "string",
+        "id": "string",
+        "url": "uri"
+    },
+    "designerId": "083486ef-3adc-4e8e-b7ac-80114b326c52"
+}

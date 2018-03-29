@@ -1,0 +1,1341 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoShow": true,
+        "container|align": "stretch",
+        "designer|userAlias": "vtn_usuario",
+        "designer|userClassName": "vtn_usuario",
+        "dock": null,
+        "height": 630,
+        "id": "vtn_usuario",
+        "layout": "vbox",
+        "modal": true,
+        "scrollable": null,
+        "title": "REGISTRO USUARIO SRMUSICAL",
+        "width": 500
+    },
+    "name": "MyWindow",
+    "configAlternates": {
+        "autoShow": "boolean",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "dock": "string",
+        "height": "auto",
+        "id": "string",
+        "modal": "boolean",
+        "title": "string",
+        "width": "auto",
+        "container|align": "string",
+        "layout": "string",
+        "scrollable": "boolean"
+    },
+    "designerId": "1c161978-a859-4768-a916-bb115efb9955",
+    "viewControllerInstanceId": "b1382781-8d10-4db0-80de-e46b94ebfb1d",
+    "viewModelInstanceId": "62532577-921a-4de9-8524-6c91851a6131",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "container|align": "stretch",
+                "designer|createAlias": null,
+                "designer|displayName": "frm_usuario",
+                "flex": 1,
+                "id": "frm_usuario",
+                "layout": "vbox",
+                "scrollable": true,
+                "title": "Nuevo usuario",
+                "width": null
+            },
+            "name": "MyForm1",
+            "configAlternates": {
+                "bodyPadding": "auto",
+                "container|align": "string",
+                "designer|createAlias": "string",
+                "designer|displayName": "string",
+                "flex": "number",
+                "height": "auto",
+                "layout": "string",
+                "title": "string",
+                "width": "auto",
+                "id": "string",
+                "scrollable": "boolean"
+            },
+            "designerId": "fd8fc1ad-7dd8-4be0-abc8-7176d4f70b11",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "blankText": "Campo requerido (*)",
+                        "designer|createAlias": "",
+                        "designer|displayName": "txt_nombre_usuario",
+                        "dock": null,
+                        "emptyText": "Ingresar nombre(s)",
+                        "fieldLabel": "Nombre(s)",
+                        "id": "txt_nombre_usuario",
+                        "labelSeparator": " ",
+                        "labelWidth": 160,
+                        "maxLength": 30,
+                        "maxLengthText": "El número máximo de carácteres es {0}",
+                        "minLength": 1,
+                        "minLengthText": "El número minimo de carácteres es {0}",
+                        "name": "nombres",
+                        "validateBlank": true,
+                        "width": 380
+                    },
+                    "name": "MyTextField2",
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "blankText": "string",
+                        "designer|createAlias": "string",
+                        "designer|displayName": "string",
+                        "dock": "string",
+                        "emptyText": "string",
+                        "fieldLabel": "string",
+                        "id": "string",
+                        "validateBlank": "boolean",
+                        "width": "auto",
+                        "labelSeparator": "string",
+                        "labelWidth": "number",
+                        "maxLength": "number",
+                        "maxLengthText": "string",
+                        "minLength": "number",
+                        "minLengthText": "string",
+                        "name": "string"
+                    },
+                    "designerId": "668de1f8-c145-444d-9f51-0c9197a47756",
+                    "cn": [
+                        {
+                            "type": "Ext.XTemplate",
+                            "reference": {
+                                "name": "afterLabelTextTpl",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "afterLabelTextTpl",
+                                "implHandler": [
+                                    "<span style=\\\"color:black;\\\" data-qtip=\\\"Requerido\\\"> (*)</span>"
+                                ]
+                            },
+                            "name": "afterLabelTextTpl",
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "implHandler": "code"
+                            },
+                            "designerId": "57026169-1a3f-49ad-afb9-9937ded737bd"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": null,
+                        "blankText": "Campo requerido (*)",
+                        "designer|createAlias": "",
+                        "designer|displayName": "txt_apellido_usuario",
+                        "emptyText": "Ingresar apellido(s)",
+                        "fieldLabel": "Apellido(s)",
+                        "id": "txt_apellido_usuario",
+                        "labelSeparator": " ",
+                        "labelWidth": 160,
+                        "maxLength": 30,
+                        "maxLengthText": "El número máximo de carácteres es {0}",
+                        "minLength": 1,
+                        "minLengthText": "El número minimo de carácteres es {0}",
+                        "name": "apellidos",
+                        "validateBlank": true
+                    },
+                    "name": "MyTextField3",
+                    "configAlternates": {
+                        "blankText": "string",
+                        "designer|createAlias": "string",
+                        "designer|displayName": "string",
+                        "emptyText": "string",
+                        "fieldLabel": "string",
+                        "id": "string",
+                        "validateBlank": "boolean",
+                        "allowBlank": "boolean",
+                        "labelSeparator": "string",
+                        "labelWidth": "number",
+                        "maxLength": "number",
+                        "maxLengthText": "string",
+                        "minLength": "number",
+                        "minLengthText": "string",
+                        "name": "string"
+                    },
+                    "designerId": "0d4df0a4-b2f2-43c2-b973-6001be9de5a4"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "blankText": "Campo requerido",
+                        "designer|createAlias": "",
+                        "designer|displayName": "txt_username_usuario",
+                        "emptyText": "Ingresar login (usuario de acceso)",
+                        "fieldLabel": "Login",
+                        "id": "txt_username_usuario",
+                        "labelSeparator": " ",
+                        "labelWidth": 160,
+                        "maxLength": 10,
+                        "maxLengthText": "El número máximo de carácteres es {0}",
+                        "minLength": 5,
+                        "minLengthText": "El número minimo de carácteres es {0}",
+                        "name": "loginUsername",
+                        "validateBlank": true
+                    },
+                    "name": "MyTextField9",
+                    "configAlternates": {
+                        "blankText": "string",
+                        "designer|createAlias": "string",
+                        "designer|displayName": "string",
+                        "emptyText": "string",
+                        "fieldLabel": "string",
+                        "flex": "number",
+                        "id": "string",
+                        "validateBlank": "boolean",
+                        "labelSeparator": "string",
+                        "labelWidth": "number",
+                        "name": "string"
+                    },
+                    "designerId": "f3c34538-db40-4501-ace3-ebdfec891f82",
+                    "cn": [
+                        {
+                            "type": "Ext.XTemplate",
+                            "reference": {
+                                "name": "afterLabelTextTpl",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "afterLabelTextTpl",
+                                "implHandler": [
+                                    "<span style=\\\"color:black;\\\" data-qtip=\\\"Requerido\\\"> (*)</span>"
+                                ]
+                            },
+                            "name": "afterLabelTextTpl",
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "implHandler": "code"
+                            },
+                            "designerId": "86dd4546-2410-40d2-887b-b0e18ed99ce7"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "blankText": "Campo obligatorio",
+                        "designer|createAlias": "",
+                        "designer|displayName": "txt_password_usuario",
+                        "emptyText": "Ingresar contraseña",
+                        "enableKeyEvents": true,
+                        "enforceMaxLength": null,
+                        "fieldLabel": "Contraseña",
+                        "id": "txt_password_usuario",
+                        "inputType": "password",
+                        "labelSeparator": " ",
+                        "labelWidth": 160,
+                        "layout|flex": null,
+                        "maxLength": 15,
+                        "maxLengthText": "El número máximo de carácteres es {0}",
+                        "minLength": 5,
+                        "minLengthText": "El número minimo de carácteres es {0}",
+                        "name": "loginPassword",
+                        "validateBlank": true
+                    },
+                    "name": "MyTextField8",
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "blankText": "string",
+                        "designer|createAlias": "string",
+                        "designer|displayName": "string",
+                        "emptyText": "string",
+                        "fieldLabel": "string",
+                        "flex": "number",
+                        "id": "string",
+                        "layout|flex": "number",
+                        "margin": "auto",
+                        "validateBlank": "boolean",
+                        "labelSeparator": "string",
+                        "labelWidth": "number",
+                        "name": "string"
+                    },
+                    "designerId": "424b76ea-d0bb-477c-866c-2e8fff014e1a",
+                    "cn": [
+                        {
+                            "type": "Ext.XTemplate",
+                            "reference": {
+                                "name": "afterLabelTextTpl",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "afterLabelTextTpl",
+                                "implHandler": [
+                                    "<span style=\\\"color:black;\\\" data-qtip=\\\"Requerido\\\"> (*)</span>"
+                                ]
+                            },
+                            "name": "afterLabelTextTpl",
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "implHandler": "code"
+                            },
+                            "designerId": "1bf6ea83-5aec-4e4d-88a4-76eb043c2698"
+                        },
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "value"
+                                ],
+                                "fn": "validator",
+                                "implHandler": [
+                                    "var validatorPass = new RegExp(SRMusicalWeb.globals.PASSWORDREGEX);",
+                                    "var cumple = validatorPass.test(value);",
+                                    "if(cumple){",
+                                    "    return true;",
+                                    "}else{",
+                                    "    return SRMusicalWeb.globals.MSJPASSWORDREGEX;",
+                                    "}"
+                                ]
+                            },
+                            "name": "validator",
+                            "designerId": "c67d8e3b-1064-4c31-ab05-61bcc50dba38"
+                        },
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onTxt_password_usuarioKeyup",
+                                "implHandler": [
+                                    "function scorePassword(pass){",
+                                    "    var score = 0;",
+                                    "    if (!pass){",
+                                    "        return score;",
+                                    "    }",
+                                    "    // award every unique letter until 5 repetitions",
+                                    "    var letters = {};",
+                                    "    for (var i=0; i<pass.length; i++) {",
+                                    "        letters[pass[i]] = (letters[pass[i]] || 0) + 1;",
+                                    "        score += 5.0 / letters[pass[i]];",
+                                    "    }",
+                                    "",
+                                    "    // bonus points for mixing it up",
+                                    "    var variations = {",
+                                    "        digits: /\\d/.test(pass),",
+                                    "        lower: /[a-z]/.test(pass),",
+                                    "        upper: /[A-Z]/.test(pass),",
+                                    "        nonWords: /\\W/.test(pass)",
+                                    "    };",
+                                    "",
+                                    "    variationCount = 0;",
+                                    "    for (var check in variations) {",
+                                    "        variationCount += (variations[check] === true) ? 1 : 0;",
+                                    "    }",
+                                    "    score += (variationCount - 1) * 10;",
+                                    "",
+                                    "    return parseInt(score);",
+                                    "}",
+                                    "",
+                                    "var password = Ext.getCmp(\"txt_password_usuario\").getValue();",
+                                    "var mostrar1 = Ext.getCmp(\"lbl_newpass_mostrar1\");",
+                                    "var mostrar2 = Ext.getCmp(\"lbl_newpass_mostrar2\");",
+                                    "var ctn1 = Ext.getCmp(\"ctn_newpass_uno\");",
+                                    "var ctn2 = Ext.getCmp(\"ctn_newpass_dos\");",
+                                    "var ctn3 = Ext.getCmp(\"ctn_newpass_tres\");",
+                                    "",
+                                    "/*mostrar1.setValue(\"Mínimo \"+window.validateLength.minLength+\" caracteres\");",
+                                    "if(password.length >= window.validateLength.minLength){",
+                                    "    mostrar1.setValue(\"\");",
+                                    "}",
+                                    "*/",
+                                    "",
+                                    "var score = scorePassword(password);",
+                                    "",
+                                    "if (score > 80){",
+                                    "    mostrar2.setValue(\"Fuerte\");",
+                                    "    ctn1.addCls(\"ctn-password-fuerte\");",
+                                    "    ctn2.addCls(\"ctn-password-fuerte\");",
+                                    "    ctn3.addCls(\"ctn-password-fuerte\");",
+                                    "}else if (score >= 40){",
+                                    "    mostrar2.setValue(\"Normal\");",
+                                    "    ctn1.removeCls(\"ctn-password-fuerte\");",
+                                    "    ctn2.removeCls(\"ctn-password-fuerte\");",
+                                    "    ctn3.removeCls(\"ctn-password-fuerte\");",
+                                    "    ctn1.addCls(\"ctn-password-normal\");",
+                                    "    ctn2.addCls(\"ctn-password-normal\");",
+                                    "}else{",
+                                    "    mostrar2.setValue(\"Débil\");",
+                                    "    ctn1.removeCls(\"ctn-password-fuerte\");",
+                                    "    ctn2.removeCls(\"ctn-password-fuerte\");",
+                                    "    ctn3.removeCls(\"ctn-password-fuerte\");",
+                                    "    ctn1.removeCls(\"ctn-password-normal\");",
+                                    "    ctn2.removeCls(\"ctn-password-normal\");",
+                                    "    ctn1.addCls(\"ctn-password-debil\");",
+                                    "}"
+                                ],
+                                "name": "keyup",
+                                "scope": "me"
+                            },
+                            "name": "onTxt_password_usuarioKeyup",
+                            "designerId": "c21c3593-dc22-436e-bec4-d6dd306348f9"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "stretch",
+                        "container|pack": "end",
+                        "designer|displayName": "ctn_validator_password",
+                        "hidden": true,
+                        "layout": "hbox",
+                        "layout|flex": null,
+                        "margin": " 0 0 5 0",
+                        "minHeight": 15
+                    },
+                    "name": "MyContainer24",
+                    "designerId": "d57034bf-d40f-4244-9d2c-a8b080b02739",
+                    "cn": [
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "stretch",
+                                "designer|displayName": "ctn_newpass",
+                                "layout": "hbox",
+                                "layout|flex": 1,
+                                "margin": "3 0 0 0",
+                                "maxHeight": 7,
+                                "maxWidth": 7
+                            },
+                            "name": "MyContainer25",
+                            "designerId": "7ab11d4a-8ec1-4887-bc38-3f58a648aa47",
+                            "cn": [
+                                {
+                                    "type": "Ext.container.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "ctn-password"
+                                        ],
+                                        "id": "ctn_newpass_uno"
+                                    },
+                                    "name": "MyContainer26",
+                                    "designerId": "5db987c8-8aca-4e01-bf4f-53a2b5b1cdeb"
+                                },
+                                {
+                                    "type": "Ext.container.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "ctn-password"
+                                        ],
+                                        "id": "ctn_newpass_dos"
+                                    },
+                                    "name": "MyContainer27",
+                                    "designerId": "1d36f693-3c6d-41d9-a77b-62c911563d04"
+                                },
+                                {
+                                    "type": "Ext.container.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "ctn-password"
+                                        ],
+                                        "id": "ctn_newpass_tres"
+                                    },
+                                    "name": "MyContainer28",
+                                    "designerId": "47f90e13-f305-4fa0-962a-46673bf845b3"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.form.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldCls": "x-form-display-field texto-password",
+                                "fieldLabel": null,
+                                "id": "lbl_newpass_mostrar2",
+                                "layout|flex": 2,
+                                "margin": "0 0 0 5",
+                                "maxHeight": 20,
+                                "maxWidth": 20,
+                                "value": null
+                            },
+                            "name": "MyDisplayField",
+                            "designerId": "99d0c663-dc50-46d9-a030-3d1773a9030d"
+                        },
+                        {
+                            "type": "Ext.form.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldCls": "x-form-display-field texto-password",
+                                "fieldLabel": null,
+                                "id": "lbl_newpass_mostrar1",
+                                "labelAlign": "right",
+                                "layout|flex": 2,
+                                "maxHeight": 20,
+                                "maxWidth": 20,
+                                "value": null
+                            },
+                            "name": "MyDisplayField1",
+                            "designerId": "7bddc5b8-5fc9-47d4-bc96-2ea2511ec337"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "blankText": "Campo obligatorio",
+                        "designer|createAlias": "",
+                        "designer|displayName": "txt_password_usuario",
+                        "emptyText": "Repetir contraseña",
+                        "fieldLabel": "Validar Contraseña",
+                        "id": "txt_password_usuario_rep",
+                        "inputType": "password",
+                        "labelSeparator": " ",
+                        "labelWidth": 160,
+                        "layout|flex": null,
+                        "maxLength": 15,
+                        "maxLengthText": "El número máximo de carácteres es {0}",
+                        "minLength": 5,
+                        "minLengthText": "El número minimo de carácteres es {0}",
+                        "name": "loginPasswordValidar",
+                        "validateBlank": true
+                    },
+                    "name": "MyTextField10",
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "blankText": "string",
+                        "designer|createAlias": "string",
+                        "designer|displayName": "string",
+                        "emptyText": "string",
+                        "fieldLabel": "string",
+                        "flex": "number",
+                        "id": "string",
+                        "layout|flex": "number",
+                        "margin": "auto",
+                        "validateBlank": "boolean",
+                        "labelSeparator": "string",
+                        "labelWidth": "number",
+                        "name": "string"
+                    },
+                    "designerId": "e3409d18-db01-413a-90bd-474a8912bf5e",
+                    "cn": [
+                        {
+                            "type": "Ext.XTemplate",
+                            "reference": {
+                                "name": "afterLabelTextTpl",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "afterLabelTextTpl",
+                                "implHandler": [
+                                    "<span style=\\\"color:black;\\\" data-qtip=\\\"Requerido\\\"> (*)</span>"
+                                ]
+                            },
+                            "name": "afterLabelTextTpl",
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "implHandler": "code"
+                            },
+                            "designerId": "44c162ca-f3d6-4b4c-a99b-dfcbe096cbca"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|createAlias": "",
+                        "designer|displayName": "txt_correo_usuario",
+                        "emptyText": "Ingresar correo electrónico",
+                        "fieldLabel": "Correo Electrónico",
+                        "id": "txt_correo_usuario",
+                        "labelSeparator": " ",
+                        "labelWidth": 160,
+                        "maxLength": 50,
+                        "maxLengthText": "El número máximo de carácteres es {0}",
+                        "minLength": 12,
+                        "minLengthText": "El número minimo de carácteres es {0}",
+                        "name": "correo",
+                        "vtype": "email",
+                        "vtypeText": "Este campo debe ser una dirección de correo electrónico: example@gmail.com"
+                    },
+                    "name": "MyTextField4",
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "blankText": "string",
+                        "designer|createAlias": "string",
+                        "designer|displayName": "string",
+                        "emptyText": "string",
+                        "fieldLabel": "string",
+                        "id": "string",
+                        "validateBlank": "boolean",
+                        "labelSeparator": "string",
+                        "labelWidth": "number",
+                        "name": "string",
+                        "vtype": "string",
+                        "vtypeText": "string"
+                    },
+                    "designerId": "e81bd492-ae9f-4b37-8f42-7859dcdf6fc5"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "blankText": "Campo requerido (solo números)",
+                        "designer|createAlias": "",
+                        "designer|displayName": "txt_telefono_usuario",
+                        "emptyText": "Ingresar número celular",
+                        "fieldLabel": "Número celular",
+                        "id": "txt_numero_usuario",
+                        "labelSeparator": " ",
+                        "labelWidth": 160,
+                        "maskRe": "/[0-9]/",
+                        "maxLength": 10,
+                        "maxLengthText": "El número máximo de carácteres es {0}",
+                        "minLength": 7,
+                        "minLengthText": "El número minimo de carácteres es {0}",
+                        "name": "telefono",
+                        "validateBlank": true,
+                        "vtype": null
+                    },
+                    "name": "MyTextField5",
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "blankText": "string",
+                        "designer|createAlias": "string",
+                        "designer|displayName": "string",
+                        "emptyText": "string",
+                        "fieldLabel": "string",
+                        "id": "string",
+                        "validateBlank": "boolean",
+                        "labelSeparator": "string",
+                        "labelWidth": "number",
+                        "name": "string"
+                    },
+                    "designerId": "5a6f91ef-1304-45b8-8d38-98b75ae23f16"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "blankText": "Campo obligatorio",
+                        "designer|createAlias": "",
+                        "designer|displayName": "txt_direccion_usuario",
+                        "emptyText": "Ingresar dirección",
+                        "fieldLabel": "Dirección",
+                        "id": "txt_direccion_usuario",
+                        "labelSeparator": " ",
+                        "labelWidth": 160,
+                        "maxLength": 100,
+                        "maxLengthText": "El número máximo de carácteres es {0}",
+                        "minLengthText": "El número minimo de carácteres es {0}",
+                        "name": "direccion",
+                        "validateBlank": true
+                    },
+                    "name": "MyTextField6",
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "blankText": "string",
+                        "designer|createAlias": "string",
+                        "designer|displayName": "string",
+                        "emptyText": "string",
+                        "fieldLabel": "string",
+                        "id": "string",
+                        "validateBlank": "boolean",
+                        "labelSeparator": "string",
+                        "labelWidth": "number",
+                        "name": "string"
+                    },
+                    "designerId": "336faf77-f978-4626-b113-b31433de8a32"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": null,
+                        "blankText": "Campo requerido (solo números)",
+                        "designer|createAlias": "",
+                        "designer|displayName": "txt_identificacion_usuario",
+                        "emptyText": "Ingresar número de identificación",
+                        "fieldLabel": "Número de identificación ",
+                        "id": "txt_identificacion_usuario",
+                        "labelSeparator": " ",
+                        "labelWidth": 160,
+                        "maskRe": "/[0-9]/",
+                        "maxLength": 10,
+                        "maxLengthText": "El número máximo de carácteres es {0}",
+                        "minLength": 8,
+                        "minLengthText": "El número minimo de carácteres es {0}",
+                        "name": "identificacion",
+                        "validateBlank": true,
+                        "vtype": null,
+                        "width": 385
+                    },
+                    "name": "MyTextField7",
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "blankText": "string",
+                        "designer|createAlias": "string",
+                        "designer|displayName": "string",
+                        "emptyText": "string",
+                        "fieldLabel": "string",
+                        "id": "string",
+                        "validateBlank": "boolean",
+                        "width": "auto",
+                        "labelSeparator": "string",
+                        "labelWidth": "number",
+                        "name": "string"
+                    },
+                    "designerId": "4cfc84fa-1cb2-4531-9906-4175c6faf11a"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": null,
+                        "blankText": "Campo obligatorio",
+                        "designer|createAlias": "",
+                        "designer|displayName": "dat_nacimiento_usuario",
+                        "emptyText": "Seleccionar fecha de nacimiento",
+                        "fieldLabel": "Fecha de nacimiento",
+                        "id": "dat_nacimiento_usuario",
+                        "labelSeparator": " ",
+                        "labelWidth": 160,
+                        "name": "fechaNacimiento",
+                        "validateBlank": true
+                    },
+                    "name": "MyDateField",
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "blankText": "string",
+                        "designer|createAlias": "string",
+                        "designer|displayName": "string",
+                        "emptyText": "string",
+                        "fieldLabel": "string",
+                        "id": "string",
+                        "validateBlank": "boolean",
+                        "labelSeparator": "string",
+                        "labelWidth": "number",
+                        "name": "string"
+                    },
+                    "designerId": "4854cb8c-d31e-49de-869a-eb3561167f17"
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "stretch",
+                        "container|pack": "center",
+                        "designer|displayName": "ctn_cargo",
+                        "layout": "vbox",
+                        "layout|flex": 1
+                    },
+                    "name": "MyContainer29",
+                    "designerId": "0256546e-ada2-4d43-8d19-9b26f6ec11fb",
+                    "cn": [
+                        {
+                            "type": "Ext.Component",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "arrow-tip"
+                                ],
+                                "height": 20,
+                                "hidden": true,
+                                "id": "cmp_arrow",
+                                "layout|flex": 1,
+                                "liquidLayout": true,
+                                "margin": "0 0 0 108",
+                                "maxHeight": 20,
+                                "maxWidth": 20,
+                                "width": 20
+                            },
+                            "name": "MyComponent",
+                            "designerId": "0526a9fb-36fd-4a63-b2f2-da87e55869a3"
+                        },
+                        {
+                            "type": "Ext.form.RadioGroup",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "allowBlank": false,
+                                "blankText": "Debes seleccionar una opción",
+                                "designer|createAlias": "",
+                                "designer|displayName": "rad_ocupacion_usuario",
+                                "fieldLabel": "Cargo ocupacional",
+                                "flex": null,
+                                "height": null,
+                                "id": "rad_ocupacion_usuario",
+                                "labelSeparator": " ",
+                                "labelWidth": 160,
+                                "layout|flex": null
+                            },
+                            "name": "MyRadioGroup",
+                            "configAlternates": {
+                                "blankText": "string",
+                                "designer|createAlias": "string",
+                                "designer|displayName": "string",
+                                "fieldLabel": "string",
+                                "flex": "number",
+                                "height": "auto",
+                                "id": "string",
+                                "layout|flex": "number",
+                                "labelSeparator": "string",
+                                "labelWidth": "number"
+                            },
+                            "designerId": "dc713e65-23e6-4749-b4b5-4a46ea492d5b",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.field.Radio",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "boxLabel": "Revisor fiscal",
+                                        "designer|createAlias": "",
+                                        "designer|displayName": "rad_revisor_usuario",
+                                        "dock": null,
+                                        "fieldLabel": null,
+                                        "flex": null,
+                                        "id": "rad_revisor_usuario",
+                                        "inputValue": "2",
+                                        "name": "cargo"
+                                    },
+                                    "name": "MyRadio",
+                                    "configAlternates": {
+                                        "boxLabel": "string",
+                                        "designer|createAlias": "string",
+                                        "designer|displayName": "string",
+                                        "dock": "string",
+                                        "fieldLabel": "string",
+                                        "flex": "number",
+                                        "id": "string",
+                                        "name": "string"
+                                    },
+                                    "designerId": "b3584cef-4348-42b7-ab3c-b0de855fbfe8"
+                                },
+                                {
+                                    "type": "Ext.form.field.Radio",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "boxLabel": "Auxiliar contable o Secretaria",
+                                        "boxLabelAlign": null,
+                                        "designer|createAlias": "",
+                                        "designer|displayName": "rad_auxiliar_usuario",
+                                        "fieldLabel": null,
+                                        "flex": null,
+                                        "height": null,
+                                        "id": "rad_auxiliar_usuario",
+                                        "inputValue": "3",
+                                        "labelAlign": null,
+                                        "maxHeight": null,
+                                        "minHeight": null,
+                                        "name": "cargo",
+                                        "tabIndex": null
+                                    },
+                                    "name": "MyRadio1",
+                                    "configAlternates": {
+                                        "boxLabel": "string",
+                                        "boxLabelAlign": "string",
+                                        "designer|createAlias": "string",
+                                        "designer|displayName": "string",
+                                        "fieldLabel": "string",
+                                        "flex": "number",
+                                        "height": "auto",
+                                        "id": "string",
+                                        "labelAlign": "string",
+                                        "maxHeight": "number",
+                                        "minHeight": "number",
+                                        "name": "string",
+                                        "tabIndex": "number"
+                                    },
+                                    "designerId": "e11a2d12-1dd2-4ba1-8eea-54898b3b780e"
+                                },
+                                {
+                                    "type": "Ext.XTemplate",
+                                    "reference": {
+                                        "name": "afterLabelTextTpl",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "afterLabelTextTpl",
+                                        "implHandler": [
+                                            "<span style=\\\"color:black;\\\" data-qtip=\\\"Requerido\\\"> (*)</span>"
+                                        ]
+                                    },
+                                    "name": "afterLabelTextTpl",
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "implHandler": "code"
+                                    },
+                                    "designerId": "f844de13-8bfd-4a18-ac7b-44cead1c68f1"
+                                },
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onRad_ocupacion_usuarioChange",
+                                        "implHandler": [
+                                            "if(newValue){",
+                                            "    Ext.getCmp('cmp_arrow').hide();",
+                                            "}"
+                                        ],
+                                        "name": "change",
+                                        "scope": "me"
+                                    },
+                                    "name": "onRad_ocupacion_usuarioChange",
+                                    "designerId": "9f2ec012-1143-42d8-aa26-1d03f0f31e8a"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "alignTarget": null,
+                        "container|align": "middle",
+                        "container|pack": "center",
+                        "designer|displayName": "ctn_botones",
+                        "dock": null,
+                        "flex": null,
+                        "height": 43,
+                        "layout": "hbox",
+                        "width": 496
+                    },
+                    "name": "MyContainer2",
+                    "configAlternates": {
+                        "alignTarget": "string",
+                        "container|align": "string",
+                        "container|pack": "string",
+                        "dock": "string",
+                        "flex": "number",
+                        "height": "auto",
+                        "layout": "string",
+                        "width": "auto",
+                        "designer|displayName": "string"
+                    },
+                    "designerId": "31957a57-e4d1-4e0b-ae7b-53ac9fcb22ee",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "btn_cancelar",
+                                "margin": "0 10 0 0",
+                                "text": "CANCELAR",
+                                "width": 100
+                            },
+                            "name": "MyButton9",
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "margin": "auto",
+                                "text": "string",
+                                "width": "auto"
+                            },
+                            "designerId": "cc564751-bba8-43ee-a465-1d810d5989aa",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onButtonClick",
+                                        "implHandler": [
+                                            "Ext.getCmp('vtn_usuario').close();",
+                                            "SRMusicalWeb.app.toast(SRMusicalWeb.globals.TOASTID,SRMusicalWeb.globals.TOASTMSJOPERACIONCANCELADA,SRMusicalWeb.globals.TOASTTITLEMENSAJE);"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "name": "onButtonClick",
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "designerId": "d90e9951-7fbf-4f34-9805-43e356dc2487"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|createAlias": "",
+                                "designer|displayName": "btn_accion",
+                                "id": "btn_accion",
+                                "text": "AGREGAR",
+                                "width": 100
+                            },
+                            "name": "MyButton2",
+                            "configAlternates": {
+                                "designer|createAlias": "string",
+                                "designer|displayName": "string",
+                                "id": "string",
+                                "text": "string",
+                                "width": "auto"
+                            },
+                            "designerId": "449b4186-e477-4659-a0b8-18df48f99e29",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onBtn_guardar_usuarioClick",
+                                        "implHandler": [
+                                            "if(!navigator.onLine){",
+                                            "    SRMusicalWeb.app.toast(SRMusicalWeb.globals.TOASTID,SRMusicalWeb.globals.TOASTMSJERROROFFLINE,SRMusicalWeb.globals.TOASTTITLEALERTA);",
+                                            "}else{",
+                                            "    var form = button.up('form').getForm();",
+                                            "    if(form.isValid()){",
+                                            "        if(Ext.getCmp('txt_password_usuario').getValue() === Ext.getCmp('txt_password_usuario_rep').getValue()){",
+                                            "            this.mask('Registrando usuario, por favor espere');",
+                                            "            var me=this;",
+                                            "            var values = form.getValues();",
+                                            "            var store = Ext.getStore('store_usuario');",
+                                            "            store.getProxy().getWriter().setWriteRecordId(false);",
+                                            "            store.add({",
+                                            "                nombres: values.nombres,",
+                                            "                apellidos: values.apellidos,",
+                                            "                loginUsername: values.loginUsername,",
+                                            "                loginPassword: values.loginPassword,",
+                                            "                tipoIdentificacion: values.tipoIdentificacion,",
+                                            "                identificacion: values.identificacion,",
+                                            "                idCargo: values.cargo,",
+                                            "                correo: values.correo,",
+                                            "                direccion: values.direccion,",
+                                            "                movil: values.movil,",
+                                            "                fechaNacimiento: values.fechaNacimiento",
+                                            "            });",
+                                            "            store.sync({",
+                                            "                callback: function(batch, eOpts){",
+                                            "                    var resp;",
+                                            "                    if(batch.operations[0].success){",
+                                            "                        resp = batch.operations[0]._resultSet.total;",
+                                            "                        if(resp > 0){",
+                                            "                            SRMusicalWeb.app.toast(SRMusicalWeb.globals.TOASTID,SRMusicalWeb.globals.TOASTMSJOPERACIONEXITOSA,SRMusicalWeb.globals.TOASTTITLEMENSAJE);",
+                                            "                            me.unmask();",
+                                            "                            button.up('#vtn_usuario').close();",
+                                            "                        }",
+                                            "                    }else if(batch.operations[0].failure){",
+                                            "                        SRMusicalWeb.app.toast(SRMusicalWeb.globals.TOASTID,SRMusicalWeb.globals.TOASTMSJERRORSERVIDOR,SRMusicalWeb.globals.TOASTTITLEALERTA);",
+                                            "                        me.unmask();",
+                                            "                        button.up('#vtn_usuario').close();",
+                                            "                    }else{",
+                                            "                        me.unmask();",
+                                            "                    }",
+                                            "                }",
+                                            "            });",
+                                            "        }else{",
+                                            "            SRMusicalWeb.app.toast(SRMusicalWeb.globals.TOASTID,SRMusicalWeb.globals.TOASTMSJNOPASSWORD,SRMusicalWeb.globals.TOASTTITLEALERTA);",
+                                            "        }",
+                                            "    }else{",
+                                            "        SRMusicalWeb.app.toast(SRMusicalWeb.globals.TOASTID,SRMusicalWeb.globals.TOASTMSJFORMULARIOINVALIDO,SRMusicalWeb.globals.TOASTTITLEALERTA);",
+                                            "        if(!form.getValues().cargo){",
+                                            "            var arrow = Ext.getCmp('cmp_arrow');",
+                                            "            arrow.show();",
+                                            "            SRMusicalWeb.app.animarFlechaTip(arrow);",
+                                            "        }",
+                                            "    }",
+                                            "}"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "name": "onBtn_guardar_usuarioClick",
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "designerId": "9e17d842-aadc-4058-9318-0cd814de4246"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "hidden": true,
+                                "id": "btn_accion_guardar",
+                                "text": "GUARDAR",
+                                "width": 100
+                            },
+                            "name": "MyButton10",
+                            "configAlternates": {
+                                "hidden": "boolean",
+                                "id": "string",
+                                "text": "string",
+                                "width": "auto"
+                            },
+                            "designerId": "dc36c40a-5e5e-4f44-9b37-5b2fb6402443",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onBtn_accion_guardarClick",
+                                        "implHandler": [
+                                            "if(!navigator.onLine){",
+                                            "    SRMusicalWeb.app.toast(SRMusicalWeb.globals.TOASTID,SRMusicalWeb.globals.TOASTMSJERROROFFLINE,SRMusicalWeb.globals.TOASTTITLEALERTA);",
+                                            "}else{",
+                                            "    var form = button.up('form').getForm();",
+                                            "    var grid = Ext.getCmp('gridUsuarios');",
+                                            "    if(form.isValid()){",
+                                            "        if(Ext.getCmp('txt_password_usuario').getValue() === Ext.getCmp('txt_password_usuario_rep').getValue()){",
+                                            "            this.mask('Actualizando usuario, por favor espere');",
+                                            "            var me=this;",
+                                            "            var record = form.getRecord(),",
+                                            "                values = form.getValues();",
+                                            "            record.set(values);",
+                                            "            grid.getSelectionModel().select(record);",
+                                            "            var store = Ext.getStore('store_usuario');",
+                                            "            store.getProxy().getWriter().setWriteRecordId(true);",
+                                            "            store.update({",
+                                            "                nombres: values.nombres,",
+                                            "                apellidos: values.apellidos,",
+                                            "                loginUsername: values.loginUsername,",
+                                            "                loginPassword: values.loginPassword,",
+                                            "                tipoIdentificacion: values.tipoIdentificacion,",
+                                            "                identificacion: values.identificacion,",
+                                            "                idCargo: values.cargo,",
+                                            "                correo: values.correo,",
+                                            "                direccion: values.direccion,",
+                                            "                fechaNacimiento: values.fechaNacimiento",
+                                            "            });",
+                                            "            store.sync({",
+                                            "                callback: function(batch, eOpts){",
+                                            "                    var resp;",
+                                            "                    if(batch.operations[0].success){",
+                                            "                        resp = batch.operations[0]._resultSet.total;",
+                                            "                        if(resp > 0){",
+                                            "                            SRMusicalWeb.app.toast(SRMusicalWeb.globals.TOASTID,SRMusicalWeb.globals.TOASTMSJOPERACIONEXITOSA,SRMusicalWeb.globals.TOASTTITLEMENSAJE);",
+                                            "                            me.unmask();",
+                                            "                            button.up('#vtn_usuario').close();",
+                                            "                        }",
+                                            "                    }else if(batch.operations[0].failure){",
+                                            "                        SRMusicalWeb.app.toast(SRMusicalWeb.globals.TOASTID,SRMusicalWeb.globals.TOASTMSJERRORSERVIDOR,SRMusicalWeb.globals.TOASTTITLEALERTA);",
+                                            "                        me.unmask();",
+                                            "                        button.up('#vtn_usuario').close();",
+                                            "                    }else{",
+                                            "                        me.unmask();",
+                                            "                    }",
+                                            "                }",
+                                            "            });",
+                                            "        }else{",
+                                            "            SRMusicalWeb.app.toast(SRMusicalWeb.globals.TOASTID,SRMusicalWeb.globals.TOASTMSJNOPASSWORD,SRMusicalWeb.globals.TOASTTITLEALERTA);",
+                                            "        }",
+                                            "    }else{",
+                                            "        SRMusicalWeb.app.toast(SRMusicalWeb.globals.TOASTID,SRMusicalWeb.globals.TOASTMSJFORMULARIOINVALIDO,SRMusicalWeb.globals.TOASTTITLEALERTA);",
+                                            "        if(!form.getValues().cargo){",
+                                            "            var arrow = Ext.getCmp('cmp_arrow');",
+                                            "            arrow.show();",
+                                            "            SRMusicalWeb.app.animarFlechaTip(arrow);",
+                                            "        }",
+                                            "    }",
+                                            "}"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "name": "onBtn_accion_guardarClick",
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "designerId": "e86c85d9-1a84-425d-b1d2-af7b72350627"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "record"
+                ],
+                "fn": "cargarDatos",
+                "implHandler": [
+                    "if(record.data.idCargo === 2){",
+                    "    Ext.getCmp('rad_revisor_usuario').setValue(true);",
+                    "}else if(record.data.idCargo === 3){",
+                    "    Ext.getCmp('rad_auxiliar_usuario').setValue(true);",
+                    "}else{",
+                    "    Ext.getCmp('rad_revisor_usuario').setValue(false);",
+                    "    Ext.getCmp('rad_auxiliar_usuario').setValue(false);",
+                    "}",
+                    "",
+                    "Ext.getCmp('txt_password_usuario_rep').setValue(record.data.loginPassword);"
+                ]
+            },
+            "name": "cargarDatos",
+            "designerId": "d839e498-51fb-475d-a1e1-5b86b1133a56"
+        }
+    ]
+}

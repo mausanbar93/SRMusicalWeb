@@ -1,0 +1,324 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "favIconUrl": "resources/images/sr_icono.png",
+        "models": [
+            "model_usuario",
+            "model_generico",
+            "model_sesion"
+        ],
+        "name": "SRMusicalWeb",
+        "stores": [
+            "store_usuario",
+            "store_sesion"
+        ],
+        "title": "SRMusicalWeb",
+        "views": [
+            "ctn_login",
+            "main_aplicacion",
+            "main",
+            "pnl_usuario",
+            "vtn_usuario"
+        ]
+    },
+    "name": "Application",
+    "configAlternates": {
+        "favIconUrl": "string",
+        "models": "typedarray",
+        "name": "string",
+        "stores": "typedarray",
+        "title": "string",
+        "views": "typedarray"
+    },
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "Ext.require(['Ext.window.Toast']);",
+                    "SRMusicalWeb.app.cargarVariablesGlobales();",
+                    "Ext.getCmp(\"ctn_login\").hide();",
+                    "",
+                    "// Mensaje ToolTip Cerrar\",",
+                    "Ext.window.Window.prototype.closeToolText = SRMusicalWeb.globals.TOOLTIPCLOSEPANEL;",
+                    "",
+                    "var store = Ext.data.StoreManager.lookup(\"store_sesion\");",
+                    "store.load({",
+                    "    callback: function(records, operation, success){",
+                    "        if(success){",
+                    "            var datos = records[0] !== undefined ? records[0].data : null;",
+                    "            if(datos === 'nosession'){",
+                    "                Ext.getCmp(\"ctn_login\").show();",
+                    "            }else{",
+                    "                Ext.getCmp('main_aplicacion').show();",
+                    "                Ext.getCmp('lbl_bienvenido').setText(datos.nombres+' '+datos.apellidos+' ('+datos.nombreCargo+')');",
+                    "            }",
+                    "        }else{",
+                    "            Ext.getCmp(\"ctn_login\").show();",
+                    "            //SRMusicalWeb.app.toast(SRMusicalWeb.globals.TOASTID,SRMusicalWeb.globals.TOASTMSJNOSESSION,SRMusicalWeb.globals.TOASTTITLEALERTA);",
+                    "        }",
+                    "    }",
+                    "});"
+                ]
+            },
+            "name": "launch",
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "designerId": "d6d03262-1438-4caf-813d-7495df838d6a"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "toast_id",
+                    "toast_msg",
+                    "toast_title"
+                ],
+                "fn": "toast",
+                "implHandler": [
+                    "var toast_width;",
+                    "var toast_time;",
+                    "if(toast_msg.length <= 45){",
+                    "    toast_width = 300;",
+                    "    toast_time = 2000;",
+                    "}else if(toast_msg.length > 45 && toast_msg.length <= 60){",
+                    "    toast_width = 400;",
+                    "    toast_time = 3000;",
+                    "}else if(toast_msg.length > 60 && toast_msg.length <= 75){",
+                    "    toast_width = 500;",
+                    "    toast_time = 4000;",
+                    "}else{",
+                    "    toast_width = 600;",
+                    "    toast_time = 5000;",
+                    "}",
+                    "if(Ext.getCmp(toast_id)===undefined){",
+                    "    Ext.toast({",
+                    "        html: '<center>'+toast_msg+'</center>',",
+                    "        timeout: toast_time,",
+                    "        id:toast_id,",
+                    "        title: toast_title,",
+                    "        width: toast_width,",
+                    "        align: 't'",
+                    "    });",
+                    "}"
+                ]
+            },
+            "name": "toast",
+            "configAlternates": {
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "designerId": "010b8b9e-1e92-4fbb-9ed6-b0728fc557c0"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "message_id",
+                    "message_title",
+                    "message_msg",
+                    "message_type"
+                ],
+                "fn": "message",
+                "implHandler": [
+                    "if(Ext.getCmp(message_id)===undefined){",
+                    "    if(message_type===\"OK\"){",
+                    "        Ext.MessageBox.show({",
+                    "            title: message_title,",
+                    "            msg: message_msg,",
+                    "            buttons: Ext.MessageBox.OK,",
+                    "            buttonText:{",
+                    "                ok: \"Aceptar\"",
+                    "            },",
+                    "            icon: Ext.MessageBox.INFO",
+                    "        });",
+                    "    }",
+                    "}"
+                ]
+            },
+            "name": "message",
+            "configAlternates": {
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "designerId": "653e96d2-e0b8-447d-b7f6-eed3e870d38a"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "server",
+                    "operation",
+                    "store"
+                ],
+                "fn": "showError",
+                "implHandler": [
+                    "var url;",
+                    "switch(operation.action){",
+                    "    case 'read':",
+                    "        url = server.api.read;",
+                    "        break;",
+                    "    case 'destroy':",
+                    "        if(store){",
+                    "            var treeD = store.tree;",
+                    "            if(treeD){",
+                    "                store.load();",
+                    "            }else{",
+                    "                store.rejectChanges();",
+                    "            }",
+                    "        }",
+                    "        url = server.api.destroy;",
+                    "        break;",
+                    "    case 'update':",
+                    "        if(store){",
+                    "            var treeU = store.tree;",
+                    "            if(treeU){",
+                    "                store.load();",
+                    "            }else{",
+                    "                store.rejectChanges();",
+                    "            }",
+                    "        }",
+                    "        url = server.api.update;",
+                    "        break;",
+                    "    case 'create':",
+                    "        if(store){",
+                    "            var treeC = store.tree;",
+                    "            if(treeC){",
+                    "                store.load();",
+                    "            }else{",
+                    "                store.rejectChanges();",
+                    "            }",
+                    "        }",
+                    "",
+                    "        url = server.api.create;",
+                    "        break;",
+                    "}",
+                    "var mensaje = 'Error desconocido';",
+                    "if(operation.error){",
+                    "    if(operation.error.status && operation.error.statusText){",
+                    "        mensaje = operation.error.status + ' ' + operation.error.statusText;",
+                    "    }else{",
+                    "        mensaje = operation.error;",
+                    "    }",
+                    "}",
+                    "mensaje = mensaje;",
+                    "console.log(mensaje);",
+                    "SRMusicalWeb.app.toast(SRMusicalWeb.globals.TOASTID,mensaje,SRMusicalWeb.globals.TOASTTITLEMENSAJE);"
+                ]
+            },
+            "name": "showError",
+            "configAlternates": {
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "designerId": "de532b6e-1ec5-4d75-bffd-89773f98997b"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "cargarVariablesGlobales",
+                "implHandler": [
+                    "// Permisos en la Aplicacion",
+                    "SRMusicalWeb.globals = {",
+                    "    TOASTID: 'PAUJIL',",
+                    "    TOASTTITLEALERTA: 'Alerta',",
+                    "    TOASTTITLEMENSAJE: 'Mensaje',",
+                    "    TOASTMSJOPERACIONEXITOSA: 'Operación Exitosa',",
+                    "    TOASTMSJOPERACIONCANCELADA: 'Operación Cancelada',",
+                    "    TOASTMSJFORMULARIOINVALIDO: 'Faltan datos del formulario (*)',",
+                    "    TOASTMSJERROROFFLINE: 'Hay un problema con la conexión a Internet',",
+                    "    TOASTMSJERRORSERVIDOR: 'Error de servidor, intente más tarde',",
+                    "    TOASTMSJNOSESSION: 'No existe sesión del usuario, inicie nuevamente ...',",
+                    "    TOASTMSJERRORPASSWORD: 'La contraseña no cumple con los criterios de seguridad',",
+                    "    TOASTMSJNOPASSWORD: 'Las contraseñas no coinciden, por favor las contraseñas deben ser similares',",
+                    "",
+                    "    MESSAGEID: 'PAUJIL',",
+                    "    MESSAGETITLEALERTA: 'Alerta',",
+                    "    MESSAGETITLEMENSAJE: 'Mensaje',",
+                    "    MESSAGETITLECONFIRMACION: 'Confirmación',",
+                    "    MESSAGETYPEYESNO: 'YESNO',",
+                    "    MESSAGETYPEOK: 'OK',",
+                    "    MESSAGEMSJNOREGISTRO: 'Debe seleccionar al menos un registro para eliminar',",
+                    "    MESSAGEMSJCONFIRMAR: 'Está seguro de eliminar los registros?',",
+                    "",
+                    "    TOOLTIPCLOSEPANEL:'Cerrar ventana',",
+                    "    PASSWORDREGEX: '^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])',",
+                    "    MSJPASSWORDREGEX: '<div><div style=\"font-size: 20px;\">Seguridad</div></br>La contraseña debe contener al menos un carácter </br><ul><li>1 mayúscula</li><li>1 minúscula</li><li>1 caracter especial(!@#$%^&*)</li><li>1 número</li></ul></div>'",
+                    "",
+                    "};"
+                ]
+            },
+            "name": "cargarVariablesGlobales",
+            "designerId": "3efe7109-c5bb-4c81-8d3f-857dd2898733"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "component"
+                ],
+                "fn": "animarFlechaTip",
+                "implHandler": [
+                    "Ext.create('Ext.fx.Anim', {",
+                    "    target: component,",
+                    "    duration: 800,",
+                    "    iterations: 50,",
+                    "    from: {",
+                    "        top: 0",
+                    "    },",
+                    "    to: {",
+                    "        top: 10",
+                    "    },",
+                    "    callback: function(){",
+                    "        component.hide();",
+                    "    }",
+                    "});"
+                ]
+            },
+            "name": "animarFlechaTip",
+            "designerId": "222ffb56-2013-4cf1-9fc7-683906899e82"
+        }
+    ]
+}
