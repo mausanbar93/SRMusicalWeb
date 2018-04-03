@@ -1,0 +1,156 @@
+{
+    "type": "Ext.container.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": "stretch",
+        "designer|userAlias": "ctn_vista_cliente",
+        "designer|userClassName": "ctn_vista_cliente",
+        "height": null,
+        "id": "ctn_vista_cliente",
+        "layout": "hbox",
+        "width": null
+    },
+    "name": "MyContainer1",
+    "designerId": "2c5ed34b-f955-4bb6-991c-177f6c001475",
+    "viewControllerInstanceId": "1c566038-9955-4f1b-9648-86ad2231f6ca",
+    "viewModelInstanceId": "6b91a63f-d5b5-4430-9e19-052805e62c5c",
+    "cn": [
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "stretch",
+                "designer|displayName": "ctn_control",
+                "layout": "vbox",
+                "layout|flex": 1
+            },
+            "name": "MyContainer1",
+            "designerId": "03821b63-e84c-471f-bfa6-148540e1760f",
+            "cn": [
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "ctn_reproductor"
+                    },
+                    "name": "MyContainer3",
+                    "designerId": "1cfb5afd-8fc6-4599-ba15-90445cd45213"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "text": "MyButton"
+                    },
+                    "name": "MyButton7",
+                    "designerId": "1be370f6-ff0e-40e9-a7db-a1bf7ffe51a7"
+                }
+            ]
+        },
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "ctn_lista",
+                "layout|flex": 1
+            },
+            "name": "MyContainer14",
+            "designerId": "bd093bee-7d11-4847-9ccb-57679bba4ace",
+            "cn": [
+                {
+                    "type": "Ext.grid.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "gridListaCanciones",
+                        "id": "gridListaCanciones",
+                        "title": "Canciones"
+                    },
+                    "name": "MyGridPanel1",
+                    "designerId": "44eba585-a1aa-482e-8cea-db607eabfd90",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "string",
+                                "designer|displayName": "col_cancion",
+                                "text": "Canción"
+                            },
+                            "name": "MyColumn10",
+                            "designerId": "f1722307-70e9-48d5-b260-e8badd8cfe4a"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "string",
+                                "designer|displayName": "col_duracion",
+                                "text": "Duración"
+                            },
+                            "name": "MyColumn11",
+                            "designerId": "5f99443b-8afe-4001-999b-5646726dec69"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "string",
+                                "designer|displayName": "col_valoracion",
+                                "text": "Valoración"
+                            },
+                            "name": "MyColumn12",
+                            "designerId": "9a0f617c-50b0-4a86-b9c8-5496d4525d69"
+                        },
+                        {
+                            "type": "Ext.view.Table",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "MyTable1",
+                            "designerId": "1e918444-3da9-4c5d-9061-545edcf91923"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

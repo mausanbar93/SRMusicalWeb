@@ -1,0 +1,74 @@
+{
+    "type": "Ext.tab.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "activeTab": 0,
+        "designer|userAlias": "tbp_gestion",
+        "designer|userClassName": "tbp_gestion",
+        "height": null,
+        "id": "tbp_gestion",
+        "width": null
+    },
+    "name": "MyTabPanel",
+    "designerId": "b43e794e-ac2b-4a12-ad4e-e14045bf2a71",
+    "viewControllerInstanceId": "f6365ce8-8e77-4186-b7e9-289a48301360",
+    "viewModelInstanceId": "2f901442-32f5-493e-8f0e-f4cbab8ecc75",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "tbp_perfil",
+                "title": "Perfil"
+            },
+            "name": "MyPanel",
+            "designerId": "f66266fe-f7f1-4c3d-9eb7-1df662cf4af2",
+            "cn": [
+                {
+                    "type": "Ext.tab.Tab",
+                    "reference": {
+                        "name": "tabConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "TabConfig",
+                    "designerId": "855d88cf-118d-4b64-9810-6d25e1ff6017"
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "tbp_contrasena",
+                "title": "Cambio Contraseña"
+            },
+            "name": "MyPanel1",
+            "designerId": "401281e6-03db-43aa-b2c4-ed7946752285",
+            "cn": [
+                {
+                    "type": "Ext.tab.Tab",
+                    "reference": {
+                        "name": "tabConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "TabConfig1",
+                    "designerId": "e601273a-ba92-4a66-9ca2-acabee3bc0ce"
+                }
+            ]
+        }
+    ]
+}

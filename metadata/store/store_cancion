@@ -1,0 +1,84 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "store_cancion",
+        "model": "model_cancion",
+        "storeId": "store_cancion"
+    },
+    "name": "MyJsonStore",
+    "designerId": "964b6382-7081-4047-a53e-bf17a6d9f2f3",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "api": [
+                    "{",
+                    "read: 'cancioncontrolador/listar',",
+                    "create: 'cancioncontrolador/crear',",
+                    "update: 'cancioncontrolador/actualizar',",
+                    "destroy: 'cancioncontrolador/eliminar'",
+                    "}"
+                ]
+            },
+            "name": "MyAjaxProxy",
+            "designerId": "222396e4-c6fa-4433-96ed-9bff88d4d459",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "messageProperty": "message",
+                        "rootProperty": "data"
+                    },
+                    "name": "MyJsonReader",
+                    "designerId": "3c287086-8763-42d4-be03-d59bd8317436"
+                },
+                {
+                    "type": "Ext.data.writer.Json",
+                    "reference": {
+                        "name": "writer",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowSingle": false
+                    },
+                    "name": "MyJsonWriter",
+                    "designerId": "f294c5a3-b25b-4c25-bc39-ec91883177ac"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onAjaxException",
+                        "implHandler": [
+                            "SRMusicalWeb.app.showError(proxy, operation, this);"
+                        ],
+                        "name": "exception",
+                        "scope": "me"
+                    },
+                    "name": "onAjaxException",
+                    "designerId": "f51aad7d-71ce-46d9-99e2-9a454efede2d"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "ctn_vista_admin",
+        "designer|userClassName": "ctn_vista_adminViewController"
+    },
+    "designerId": "c877c17b-c102-4b2c-a479-e0a4d897e427"
+}

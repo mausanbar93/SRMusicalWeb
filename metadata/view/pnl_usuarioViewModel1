@@ -1,0 +1,18 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "pnl_cancion",
+        "designer|userClassName": "pnl_usuarioViewModel1"
+    },
+    "name": "pnl_usuarioViewModel1",
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "designerId": "d3b899a0-b000-47ec-9e93-dbd144590756"
+}

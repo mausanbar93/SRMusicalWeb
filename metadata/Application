@@ -6,24 +6,30 @@
     },
     "codeClass": null,
     "userConfig": {
-        "favIconUrl": "resources/images/sr_icono.png",
+        "favIconUrl": "resources/images/srmusical_icono.png",
         "models": [
             "model_usuario",
             "model_generico",
-            "model_sesion"
+            "model_sesion",
+            "model_cancion"
         ],
         "name": "SRMusicalWeb",
         "stores": [
             "store_usuario",
-            "store_sesion"
+            "store_sesion",
+            "store_cancion"
         ],
         "title": "SRMusicalWeb",
         "views": [
             "ctn_login",
             "main_aplicacion",
+            "ctn_vista_admin",
+            "ctn_vista_cliente",
             "main",
             "pnl_usuario",
-            "vtn_usuario"
+            "pnl_cancion",
+            "vtn_usuario",
+            "tbp_gestion"
         ]
     },
     "name": "Application",
@@ -63,7 +69,11 @@
                     "                Ext.getCmp(\"ctn_login\").show();",
                     "            }else{",
                     "                Ext.getCmp('main_aplicacion').show();",
-                    "                Ext.getCmp('lbl_bienvenido').setText(datos.nombres+' '+datos.apellidos+' ('+datos.nombreCargo+')');",
+                    "                if(datos.ocupacion !== 'Administrador'){",
+                    "                    Ext.getCmp('ctn_vista_admin').hide();",
+                    "                    Ext.getCmp('ctn_vista_cliente').show();",
+                    "                }",
+                    "                Ext.getCmp('lbl_bienvenido').setText(datos.nombre+' '+datos.apellido+' ('+datos.ocupacion+')');",
                     "            }",
                     "        }else{",
                     "            Ext.getCmp(\"ctn_login\").show();",
@@ -278,10 +288,10 @@
                     "    MESSAGEMSJNOREGISTRO: 'Debe seleccionar al menos un registro para eliminar',",
                     "    MESSAGEMSJCONFIRMAR: 'Está seguro de eliminar los registros?',",
                     "",
-                    "    TOOLTIPCLOSEPANEL:'Cerrar ventana',",
+                    "    TOOLTIPCLOSEPANEL: 'Cerrar ventana',",
+                    "    LONGITUDTEXTOLETRA: 50,",
                     "    PASSWORDREGEX: '^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])',",
                     "    MSJPASSWORDREGEX: '<div><div style=\"font-size: 20px;\">Seguridad</div></br>La contraseña debe contener al menos un carácter </br><ul><li>1 mayúscula</li><li>1 minúscula</li><li>1 caracter especial(!@#$%^&*)</li><li>1 número</li></ul></div>'",
-                    "",
                     "};"
                 ]
             },
@@ -319,6 +329,41 @@
             },
             "name": "animarFlechaTip",
             "designerId": "222ffb56-2013-4cf1-9fc7-683906899e82"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "segundos"
+                ],
+                "fn": "convertirSegundos",
+                "implHandler": [
+                    "var hours = Math.floor(segundos / 3600);  ",
+                    "var minutes = Math.floor((segundos % 3600) / 60);",
+                    "var seconds = segundos % 60;",
+                    "var result;",
+                    "",
+                    "//Anteponiendo un 0 a los minutos si son menos de 10 ",
+                    "minutes = minutes < 10 ? '0' + minutes : minutes;",
+                    "",
+                    "//Anteponiendo un 0 a los segundos si son menos de 10 ",
+                    "seconds = seconds < 10 ? '0' + seconds : seconds;",
+                    "",
+                    "if(hours>0)",
+                    "    result = hours + \":\" + minutes + \":\" + seconds;  // 2:41:30",
+                    "else",
+                    "    result = minutes + \":\" + seconds;  // 41:30",
+                    "",
+                    "return result;"
+                ]
+            },
+            "name": "convertirSegundos",
+            "designerId": "d8870859-d215-480c-81f5-f0323b500aa3"
         }
     ]
 }

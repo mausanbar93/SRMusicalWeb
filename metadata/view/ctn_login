@@ -291,7 +291,25 @@
                                 "validateBlank": "boolean",
                                 "name": "string"
                             },
-                            "designerId": "13f4a1c6-3641-4b7c-861f-caf4b192aaf6"
+                            "designerId": "13f4a1c6-3641-4b7c-861f-caf4b192aaf6",
+                            "cn": [
+                                {
+                                    "type": "Ext.XTemplate",
+                                    "reference": {
+                                        "name": "afterLabelTextTpl",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "afterLabelTextTpl",
+                                        "implHandler": [
+                                            "<span style=\\\"color:black;\\\" data-qtip=\\\"Requerido\\\"> (*)</span>"
+                                        ]
+                                    },
+                                    "name": "afterLabelTextTpl",
+                                    "designerId": "66d98c2f-0eb8-426d-bf81-5ccbce826c60"
+                                }
+                            ]
                         },
                         {
                             "type": "Ext.form.field.Text",
@@ -310,6 +328,7 @@
                                 "fieldLabel": "Contraseña",
                                 "inputType": "password",
                                 "invalidText": "El campo no pueder estar vacio",
+                                "labelSeparator": " ",
                                 "maxLength": 20,
                                 "maxLengthText": "El número máximo de caráctreres es {0}",
                                 "minLength": 1,
@@ -365,6 +384,22 @@
                                         "scope": "string"
                                     },
                                     "designerId": "5ddc1a7e-d663-4eea-9564-799cba1fcb58"
+                                },
+                                {
+                                    "type": "Ext.XTemplate",
+                                    "reference": {
+                                        "name": "afterLabelTextTpl",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "afterLabelTextTpl",
+                                        "implHandler": [
+                                            "<span style=\\\"color:black;\\\" data-qtip=\\\"Requerido\\\"> (*)</span>"
+                                        ]
+                                    },
+                                    "name": "afterLabelTextTpl",
+                                    "designerId": "d3a65256-e0b9-4c8c-baaf-a50ab331a73c"
                                 }
                             ]
                         },
@@ -451,6 +486,10 @@
                                                     "                    if(dato.habilitado){",
                                                     "                        Ext.getCmp('ctn_login').hide();",
                                                     "                        Ext.getCmp('main_aplicacion').show();",
+                                                    "                        if(dato.ocupacion !== 'Administrador'){",
+                                                    "                            Ext.getCmp('ctn_vista_admin').hide();",
+                                                    "                            Ext.getCmp('ctn_vista_cliente').show();",
+                                                    "                        }",
                                                     "                        Ext.getCmp('lbl_bienvenido').setText(dato.nombre+' '+dato.apellido+' ('+dato.ocupacion+')');",
                                                     "                    }",
                                                     "                }",

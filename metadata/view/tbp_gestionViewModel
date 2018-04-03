@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "tbp_gestion",
+        "designer|userClassName": "tbp_gestionViewModel"
+    },
+    "designerId": "2f901442-32f5-493e-8f0e-f4cbab8ecc75"
+}

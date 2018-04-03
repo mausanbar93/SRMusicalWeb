@@ -55,7 +55,7 @@
                 "layout": "string",
                 "layout|flex": "number"
             },
-            "designerId": "46917eb0-49cc-4668-88ab-8a664d4b1439",
+            "designerId": "899cfed1-43a1-4b2d-b2e0-bba4f5822a5e",
             "cn": [
                 {
                     "type": "Ext.container.Container",
@@ -143,9 +143,9 @@
                                     "userConfig": {
                                         "fn": "onButtonClick",
                                         "implHandler": [
-                                            "Ext.getCmp('ctn_botones').setHidden(false);",
-                                            "Ext.getCmp('ctn_principal').setHidden(true);",
-                                            "Ext.getCmp('ctn_cuerpo').removeAll();"
+                                            "Ext.getCmp('ctn_vista_admin').show();",
+                                            "Ext.getCmp('ctn_principal').hide();",
+                                            "Ext.getCmp('ctn_cuerpo').hide();"
                                         ],
                                         "name": "click",
                                         "scope": "me"
@@ -218,29 +218,11 @@
                                         "dock": null,
                                         "height": 40,
                                         "layout|flex": null,
-                                        "src": "resources/images/logo_empresa_icono.png",
+                                        "src": "resources/images/logo_innovacion.png",
                                         "width": null
                                     },
                                     "name": "MyImg3",
                                     "designerId": "c165feb8-3275-4166-9930-0863665a36a0"
-                                },
-                                {
-                                    "type": "Ext.Img",
-                                    "reference": {
-                                        "name": "items",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|displayName": "logo_empresa_texto",
-                                        "dock": null,
-                                        "height": 35,
-                                        "layout|flex": null,
-                                        "src": "resources/images/logo_empresa_texto.png",
-                                        "width": null
-                                    },
-                                    "name": "MyImg5",
-                                    "designerId": "259c47b6-5788-4f02-ac4a-f9fd05ce9647"
                                 }
                             ]
                         },
@@ -290,30 +272,11 @@
                                         "height": 40,
                                         "layout|flex": null,
                                         "margin": null,
-                                        "src": "resources/images/logo_uniautonoma_icono.png",
+                                        "src": "resources/images/logo_unimayor_horizontal.png",
                                         "width": null
                                     },
                                     "name": "MyImg4",
                                     "designerId": "e1122ad1-2928-4724-b5e2-b786a1fc450e"
-                                },
-                                {
-                                    "type": "Ext.Img",
-                                    "reference": {
-                                        "name": "items",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|displayName": "logo_institucion",
-                                        "dock": null,
-                                        "height": 35,
-                                        "layout|flex": null,
-                                        "margin": null,
-                                        "src": "resources/images/logo_uniautonoma_texto.png",
-                                        "width": null
-                                    },
-                                    "name": "MyImg6",
-                                    "designerId": "f186b78e-3457-4945-8d0c-552669d28c73"
                                 }
                             ]
                         }
@@ -424,369 +387,34 @@
             ]
         },
         {
-            "type": "Ext.container.Container",
+            "type": "linkedinstance",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "container|align": "stretch",
-                "container|pack": "center",
-                "container|padding": null,
-                "designer|displayName": "ctn_botones",
-                "flex": null,
-                "id": "ctn_botones",
-                "layout": "hbox",
-                "layout|flex": null,
-                "padding": 50
+                "designer|displayName": "ctn_vista_admin",
+                "layout|flex": null
             },
-            "name": "MyContainer1",
-            "configAlternates": {
-                "container|align": "string",
-                "container|pack": "string",
-                "container|padding": "auto",
-                "designer|displayName": "string",
-                "flex": "number",
-                "id": "string",
-                "layout": "string",
-                "layout|flex": "number",
-                "padding": "auto"
+            "name": "ctn_vista_admin1",
+            "designerId": "64f6abdb-ce79-4ebc-a79f-7e355e839ad7",
+            "masterInstanceId": "ceecab37-3081-431c-93d4-c10e25abe780"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
             },
-            "designerId": "83387129-5791-4835-a94f-0587ef8561fd",
-            "cn": [
-                {
-                    "type": "Ext.container.Container",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "cls": [
-                            "botones-general"
-                        ],
-                        "container|align": "stretch",
-                        "container|padding": null,
-                        "designer|displayName": "ctn_usuario",
-                        "layout": "vbox",
-                        "layout|flex": null,
-                        "margin": null
-                    },
-                    "name": "MyContainer",
-                    "configAlternates": {
-                        "cls": "typedarray",
-                        "container|align": "string",
-                        "container|padding": "auto",
-                        "designer|displayName": "string",
-                        "layout": "string",
-                        "layout|flex": "number",
-                        "margin": "auto"
-                    },
-                    "designerId": "e70adf24-eb3f-4247-8d43-2d811cf1f5d6",
-                    "cn": [
-                        {
-                            "type": "Ext.Img",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "cls": [
-                                    "imagen-botones-general"
-                                ],
-                                "designer|displayName": "img_usuarios",
-                                "height": null,
-                                "src": "resources/images/usuarios.svg",
-                                "width": null
-                            },
-                            "name": "MyImg",
-                            "configAlternates": {
-                                "cls": "typedarray",
-                                "designer|displayName": "string",
-                                "height": "auto",
-                                "src": "uri",
-                                "width": "auto"
-                            },
-                            "designerId": "ff6c5b18-b50f-4bf0-bf81-56fa2d83b08c"
-                        },
-                        {
-                            "type": "Ext.button.Button",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "baseCls": null,
-                                "cls": null,
-                                "componentCls": null,
-                                "height": null,
-                                "layout|flex": null,
-                                "text": "Usuarios",
-                                "width": null
-                            },
-                            "name": "MyButton1",
-                            "configAlternates": {
-                                "baseCls": "string",
-                                "cls": "string",
-                                "componentCls": "string",
-                                "height": "auto",
-                                "layout|flex": "number",
-                                "text": "string",
-                                "width": "auto"
-                            },
-                            "designerId": "25d005f0-c180-4e2b-af5e-a6cd510947dc",
-                            "cn": [
-                                {
-                                    "type": "basiceventbinding",
-                                    "reference": {
-                                        "name": "listeners",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "fn": "onButtonClick1",
-                                        "implHandler": [
-                                            "Ext.getCmp('ctn_botones').setHidden(true);",
-                                            "Ext.getCmp('ctn_principal').setHidden(false);",
-                                            "Ext.getCmp('ctn_cuerpo').removeAll();",
-                                            "Ext.getCmp('ctn_cuerpo').add(Ext.widget('pnl_usuario')).show();"
-                                        ],
-                                        "name": "click",
-                                        "scope": "me"
-                                    },
-                                    "name": "onButtonClick1",
-                                    "configAlternates": {
-                                        "fn": "string",
-                                        "implHandler": "code",
-                                        "name": "string",
-                                        "scope": "string"
-                                    },
-                                    "designerId": "202faebb-47e5-486a-9cc2-5f3ce5255d24"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "type": "Ext.container.Container",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "cls": [
-                            "botones-general"
-                        ],
-                        "container|align": "stretch",
-                        "container|padding": null,
-                        "designer|displayName": "ctn_renta",
-                        "layout": "vbox",
-                        "layout|flex": null,
-                        "margin": null
-                    },
-                    "name": "MyContainer2",
-                    "configAlternates": {
-                        "cls": "typedarray",
-                        "container|align": "string",
-                        "container|padding": "auto",
-                        "designer|displayName": "string",
-                        "layout": "string",
-                        "layout|flex": "number",
-                        "margin": "auto"
-                    },
-                    "designerId": "52c5ebc4-2279-42d4-8a97-2a633f7696b0",
-                    "cn": [
-                        {
-                            "type": "Ext.Img",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "cls": [
-                                    "imagen-botones-general"
-                                ],
-                                "designer|displayName": "img_restas",
-                                "height": null,
-                                "src": "resources/images/renta.svg",
-                                "width": null
-                            },
-                            "name": "MyImg",
-                            "configAlternates": {
-                                "cls": "typedarray",
-                                "designer|displayName": "string",
-                                "height": "auto",
-                                "src": "uri",
-                                "width": "auto"
-                            },
-                            "designerId": "835bb127-8e5d-4a7b-a584-5f9ac8052c44"
-                        },
-                        {
-                            "type": "Ext.button.Button",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "height": null,
-                                "layout|flex": null,
-                                "text": "Rentas",
-                                "width": null
-                            },
-                            "name": "MyButton3",
-                            "configAlternates": {
-                                "height": "auto",
-                                "layout|flex": "number",
-                                "text": "string",
-                                "width": "auto"
-                            },
-                            "designerId": "21bb6473-5aa6-42d9-9586-ab3127db5d45",
-                            "cn": [
-                                {
-                                    "type": "basiceventbinding",
-                                    "reference": {
-                                        "name": "listeners",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "fn": "onButtonClick2",
-                                        "implHandler": [
-                                            "Ext.getCmp('ctn_botones').setHidden(true);",
-                                            "Ext.getCmp('ctn_principal').setHidden(false);",
-                                            "Ext.getCmp('ctn_cuerpo').removeAll();",
-                                            "Ext.getCmp('ctn_cuerpo').add(Ext.widget('pnl_cliente')).show();"
-                                        ],
-                                        "name": "click",
-                                        "scope": "me"
-                                    },
-                                    "name": "onButtonClick2",
-                                    "configAlternates": {
-                                        "fn": "string",
-                                        "implHandler": "code",
-                                        "name": "string",
-                                        "scope": "string"
-                                    },
-                                    "designerId": "f6702e9d-2731-488b-8994-74fb4ca145c5"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "type": "Ext.container.Container",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "cls": [
-                            "botones-general"
-                        ],
-                        "container|align": "stretch",
-                        "container|padding": null,
-                        "designer|displayName": "ctn_documentos",
-                        "layout": "vbox",
-                        "layout|flex": null
-                    },
-                    "name": "MyContainer5",
-                    "configAlternates": {
-                        "cls": "typedarray",
-                        "container|align": "string",
-                        "container|padding": "auto",
-                        "designer|displayName": "string",
-                        "layout": "string",
-                        "layout|flex": "number"
-                    },
-                    "designerId": "257cd54d-55a5-48bb-a411-5ebac6ef6c8f",
-                    "cn": [
-                        {
-                            "type": "Ext.Img",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "cls": [
-                                    "imagen-botones-general"
-                                ],
-                                "designer|displayName": "img_documento",
-                                "height": null,
-                                "src": "resources/images/documento.svg",
-                                "width": null
-                            },
-                            "name": "MyImg",
-                            "configAlternates": {
-                                "cls": "typedarray",
-                                "designer|displayName": "string",
-                                "height": "auto",
-                                "src": "uri",
-                                "width": "auto"
-                            },
-                            "designerId": "2a94ec60-15eb-4769-b4bd-392905602117"
-                        },
-                        {
-                            "type": "Ext.button.Button",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "height": null,
-                                "layout|flex": null,
-                                "text": "Documentos",
-                                "width": null
-                            },
-                            "name": "MyButton3",
-                            "configAlternates": {
-                                "height": "auto",
-                                "layout|flex": "number",
-                                "text": "string",
-                                "width": "auto"
-                            },
-                            "designerId": "37bfe9de-ce3b-42d2-aa47-9708c3bfdb67",
-                            "cn": [
-                                {
-                                    "type": "basiceventbinding",
-                                    "reference": {
-                                        "name": "listeners",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "fn": "onButtonClick21",
-                                        "implHandler": [
-                                            "Ext.getCmp('ctn_botones').setHidden(true);",
-                                            "Ext.getCmp('ctn_principal').setHidden(false);",
-                                            "Ext.getCmp('ctn_cuerpo').removeAll();",
-                                            "Ext.getCmp('ctn_cuerpo').add(Ext.widget('pnl_documento')).show();"
-                                        ],
-                                        "name": "click",
-                                        "scope": "me"
-                                    },
-                                    "name": "onButtonClick21",
-                                    "configAlternates": {
-                                        "fn": "string",
-                                        "implHandler": "code",
-                                        "name": "string",
-                                        "scope": "string"
-                                    },
-                                    "designerId": "c940ad8a-ce66-4b50-83b4-e902322b71f4"
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "codeClass": null,
+            "userConfig": {
+                "hidden": true,
+                "layout|flex": null
+            },
+            "name": "ctn_vista_cliente1",
+            "designerId": "24006c91-03d4-440e-8553-644e7923b1a9",
+            "masterInstanceId": "2c5ed34b-f955-4bb6-991c-177f6c001475"
         },
         {
             "type": "Ext.container.Container",
@@ -798,6 +426,7 @@
             "userConfig": {
                 "designer|displayName": "ctn_cuerpo",
                 "flex": null,
+                "hidden": true,
                 "id": "ctn_cuerpo",
                 "layout|flex": null
             },
@@ -808,7 +437,7 @@
                 "id": "string",
                 "layout|flex": "number"
             },
-            "designerId": "99ae0280-c7f2-45a2-a3b4-76aab527549a"
+            "designerId": "a98c34b8-86b4-45d7-a374-b26ab1bb65f6"
         }
     ]
 }

@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "ctn_vista_admin",
+        "designer|userClassName": "ctn_vista_adminViewModel"
+    },
+    "designerId": "12f07b58-e209-4162-8ec8-c94cac95f972"
+}

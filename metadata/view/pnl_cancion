@@ -7,16 +7,16 @@
     "codeClass": null,
     "userConfig": {
         "container|align": "stretch",
-        "designer|userAlias": "pnl_usuario",
-        "designer|userClassName": "pnl_usuario",
+        "designer|userAlias": "pnl_cancion",
+        "designer|userClassName": "pnl_cancion",
         "height": null,
-        "id": "pnl_usuario",
+        "id": "pnl_cancion",
         "layout": "vbox",
         "scrollable": null,
-        "title": "PANEL USUARIO",
+        "title": "PANEL CANCIÓN",
         "width": null
     },
-    "name": "MyPanel",
+    "name": "pnl_usuario1",
     "configAlternates": {
         "scrollable": "boolean",
         "designer|userAlias": "string",
@@ -29,9 +29,9 @@
         "container|align": "string",
         "layout": "string"
     },
-    "designerId": "2f34a62b-0846-46f4-a7f8-a68c0d290b00",
-    "viewControllerInstanceId": "ddc0df51-8942-4314-bd91-cac1c98c86a1",
-    "viewModelInstanceId": "c3974ab8-3ddd-4ab2-8c20-deb09277b31d",
+    "designerId": "f8ddc63e-50ec-4394-8fca-975feff77ac5",
+    "viewControllerInstanceId": "6e21c597-3dec-47c8-aff9-228c29df0dc1",
+    "viewModelInstanceId": "d3b899a0-b000-47ec-9e93-dbd144590756",
     "cn": [
         {
             "type": "Ext.grid.Panel",
@@ -45,10 +45,13 @@
                 "emptyText": "No hay registros para mostrar",
                 "flex": 1,
                 "height": 500,
-                "id": "gridUsuarios",
+                "id": "gridCanciones",
                 "layout|flex": 1,
-                "store": "store_usuario",
-                "title": "Listado Usuario"
+                "scrollable": true,
+                "store": "store_cancion",
+                "title": "Listado Canción",
+                "titleAlign": null,
+                "width": 500
             },
             "name": "MyGridPanel",
             "configAlternates": {
@@ -58,9 +61,10 @@
                 "autoLoad": "boolean",
                 "emptyText": "string",
                 "id": "string",
-                "layout|flex": "number"
+                "layout|flex": "number",
+                "scrollable": "boolean"
             },
-            "designerId": "d8ec496d-9b2e-49cc-8281-ff2c488191c1",
+            "designerId": "dc9f0ef5-8832-4e2f-ae4f-10a3a1131c93",
             "cn": [
                 {
                     "type": "Ext.selection.CheckboxModel",
@@ -70,7 +74,7 @@
                     },
                     "codeClass": null,
                     "name": "MyCheckboxSelectionModel",
-                    "designerId": "8ce6b85d-e3a9-4fa8-afae-939e62fec7bc"
+                    "designerId": "11465d15-1795-41d0-ad8d-75e204843979"
                 },
                 {
                     "type": "Ext.grid.column.Column",
@@ -90,7 +94,7 @@
                         "flex": "number",
                         "text": "string"
                     },
-                    "designerId": "cfceb4ff-9517-4905-a0f7-7de17181e50a"
+                    "designerId": "ac07fd00-ad92-44dc-8fe0-7fb96415f403"
                 },
                 {
                     "type": "Ext.grid.column.Column",
@@ -100,9 +104,9 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "dataIndex": "string",
+                        "dataIndex": "titulo",
                         "flex": 2,
-                        "text": "Nombre Completo"
+                        "text": "Título"
                     },
                     "name": "MyColumn",
                     "configAlternates": {
@@ -110,43 +114,7 @@
                         "flex": "number",
                         "text": "string"
                     },
-                    "designerId": "f0dcd576-dd1f-44e6-bea1-d674e1273c8d",
-                    "cn": [
-                        {
-                            "type": "fixedfunction",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "designer|params": [
-                                    "value",
-                                    "metaData",
-                                    "record",
-                                    "rowIndex",
-                                    "colIndex",
-                                    "store",
-                                    "view"
-                                ],
-                                "fn": "renderer",
-                                "implHandler": [
-                                    "if(record.data.apellido !== '' || record.data.apellido !== null){",
-                                    "    return record.data.nombre + ' ' + record.data.apellido;",
-                                    "}else{",
-                                    "    return record.data.nombre;",
-                                    "}"
-                                ]
-                            },
-                            "name": "renderer",
-                            "configAlternates": {
-                                "designer|params": "typedarray",
-                                "fn": "string",
-                                "implHandler": "code"
-                            },
-                            "designerId": "b3869e61-b324-4620-b596-26e013d2c2f7"
-                        }
-                    ]
+                    "designerId": "9efa5d08-d329-42b6-9629-12542c037cd5"
                 },
                 {
                     "type": "Ext.grid.column.Column",
@@ -156,9 +124,9 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "dataIndex": "cuenta",
-                        "flex": 1,
-                        "text": "Cuenta"
+                        "dataIndex": "artista",
+                        "flex": 2,
+                        "text": "Artista"
                     },
                     "name": "MyColumn2",
                     "configAlternates": {
@@ -166,7 +134,7 @@
                         "flex": "number",
                         "text": "string"
                     },
-                    "designerId": "9001de74-d50a-4126-aeda-1c118e5da5e0"
+                    "designerId": "8b8925f7-699f-492f-9ac4-f0206f5db975"
                 },
                 {
                     "type": "Ext.grid.column.Column",
@@ -176,9 +144,10 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "dataIndex": "contrasena",
-                        "flex": 1,
-                        "text": "Contraseña"
+                        "dataIndex": "letra",
+                        "flex": 4,
+                        "text": "Letra",
+                        "tooltipType": null
                     },
                     "name": "MyColumn4",
                     "configAlternates": {
@@ -186,127 +155,7 @@
                         "flex": "number",
                         "text": "string"
                     },
-                    "designerId": "5b5e2498-a1c7-4291-9c74-778d6937f0fb"
-                },
-                {
-                    "type": "Ext.grid.column.Column",
-                    "reference": {
-                        "name": "columns",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "dataIndex": "ocupacion",
-                        "flex": 1,
-                        "text": "Ocupación"
-                    },
-                    "name": "MyColumn3",
-                    "configAlternates": {
-                        "dataIndex": "datafield",
-                        "flex": "number",
-                        "text": "string"
-                    },
-                    "designerId": "84d3eebb-7410-48bb-b8fb-0e92dac9a2c5"
-                },
-                {
-                    "type": "Ext.grid.column.Date",
-                    "reference": {
-                        "name": "columns",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "dataIndex": "fechaNacimiento",
-                        "flex": 1,
-                        "text": "Fecha de Nacimiento"
-                    },
-                    "name": "MyDateColumn",
-                    "configAlternates": {
-                        "dataIndex": "datafield",
-                        "flex": "number",
-                        "text": "string"
-                    },
-                    "designerId": "1e8d18e8-f30a-462d-8e52-c2156eeed88b"
-                },
-                {
-                    "type": "Ext.grid.column.Column",
-                    "reference": {
-                        "name": "columns",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "dataIndex": "correo",
-                        "flex": 1,
-                        "text": "Correo"
-                    },
-                    "name": "MyColumn8",
-                    "configAlternates": {
-                        "dataIndex": "datafield",
-                        "flex": "number",
-                        "text": "string"
-                    },
-                    "designerId": "694f115d-3fc2-440c-8f60-a67264cb3d8f"
-                },
-                {
-                    "type": "Ext.grid.column.Column",
-                    "reference": {
-                        "name": "columns",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "dataIndex": "direccion",
-                        "flex": 1,
-                        "text": "Dirección"
-                    },
-                    "name": "MyColumn1",
-                    "configAlternates": {
-                        "dataIndex": "datafield",
-                        "flex": "number",
-                        "text": "string"
-                    },
-                    "designerId": "dacbefa2-5e5e-4fa4-a439-999bce7f8b5f"
-                },
-                {
-                    "type": "Ext.grid.column.Column",
-                    "reference": {
-                        "name": "columns",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "dataIndex": "numeroCelular",
-                        "flex": 1,
-                        "text": "Teléfono"
-                    },
-                    "name": "MyColumn5",
-                    "configAlternates": {
-                        "dataIndex": "datafield",
-                        "flex": "number",
-                        "text": "string"
-                    },
-                    "designerId": "ac3ea66d-58cc-41a6-b0a7-cb4b3a9ff090"
-                },
-                {
-                    "type": "Ext.grid.column.Column",
-                    "reference": {
-                        "name": "columns",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "dataIndex": "habilitado",
-                        "flex": 1,
-                        "text": "Estado"
-                    },
-                    "name": "MyColumn9",
-                    "configAlternates": {
-                        "dataIndex": "datafield",
-                        "flex": "number",
-                        "text": "string"
-                    },
-                    "designerId": "bdba66df-65da-490f-8b91-a5dd4a3d216f",
+                    "designerId": "8237042c-c13b-49e3-b725-4e8f78428280",
                     "cn": [
                         {
                             "type": "fixedfunction",
@@ -327,20 +176,191 @@
                                 ],
                                 "fn": "renderer",
                                 "implHandler": [
-                                    "if(value){",
-                                    "    return 'Activo';",
-                                    "}else{",
-                                    "    return 'Inactivo';",
-                                    "}"
+                                    "var retorno = value.replace(/\\n/g,'<br>');",
+                                    "if(value.length>SRMusicalWeb.globals.LONGITUDTEXTOLETRA)",
+                                    "    metaData.tdAttr = 'data-qtip=\"' + value + '\"';",
+                                    "    retorno = value.slice(0,SRMusicalWeb.globals.LONGITUDTEXTOLETRA)+\"...\";",
+                                    "return retorno;"
                                 ]
                             },
                             "name": "renderer",
-                            "configAlternates": {
-                                "designer|params": "typedarray",
-                                "fn": "string",
-                                "implHandler": "code"
+                            "designerId": "f841eb17-684e-477b-91e7-c3058a6198ab"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "estadoByEstadoReferenciaNombre",
+                        "flex": 2,
+                        "text": "Estado"
+                    },
+                    "name": "MyColumn3",
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "flex": "number",
+                        "text": "string"
+                    },
+                    "designerId": "a35f54c1-7be0-4889-a965-01d86b1fbc0e"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "rankingBillboard",
+                        "flex": 1,
+                        "text": "Ranking Billboard"
+                    },
+                    "name": "MyColumn13",
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "flex": "number",
+                        "text": "string"
+                    },
+                    "designerId": "823168a3-fbb9-482f-9cf4-8a880352b535"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "semanaBillboard",
+                        "flex": 1,
+                        "text": "Semanas Ranking"
+                    },
+                    "name": "MyColumn14",
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "flex": "number",
+                        "text": "string"
+                    },
+                    "designerId": "b3606b95-595d-4832-ad14-caacd5d470be"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "numeroVisualizacion",
+                        "flex": 1,
+                        "text": "Número Visualizaciones"
+                    },
+                    "name": "MyColumn8",
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "flex": "number",
+                        "text": "string"
+                    },
+                    "designerId": "1fd72a4b-9244-49af-937c-d0d5afafa121"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "duracionSegundo",
+                        "flex": 1,
+                        "text": "Duración"
+                    },
+                    "name": "MyColumn1",
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "flex": "number",
+                        "text": "string"
+                    },
+                    "designerId": "d6fbdbac-7c3c-42e1-bddf-56bd8954c4ab",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
                             },
-                            "designerId": "b1a4b6e0-0e0c-4827-b8a0-b36a525fcea3"
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "value",
+                                    "metaData",
+                                    "record",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "store",
+                                    "view"
+                                ],
+                                "fn": "renderer",
+                                "implHandler": [
+                                    "var retorno = SRMusicalWeb.app.convertirSegundos(value);",
+                                    "return retorno;"
+                                ]
+                            },
+                            "name": "renderer",
+                            "designerId": "3688d8ab-7a5f-46ef-88e5-c1e05fd7b886"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "valoracionReferencia",
+                        "flex": 1,
+                        "text": "Valoración"
+                    },
+                    "name": "MyColumn5",
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "flex": "number",
+                        "text": "string"
+                    },
+                    "designerId": "a7622970-ff7e-43da-8c75-b97e88697b4b",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "value",
+                                    "metaData",
+                                    "record",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "store",
+                                    "view"
+                                ],
+                                "fn": "renderer",
+                                "implHandler": [
+                                    "var retorno = (Math.round(value * 100) / 100);",
+                                    "return retorno;"
+                                ]
+                            },
+                            "name": "renderer",
+                            "designerId": "0ef7e4ed-ac74-4695-95dc-6c999d315fc4"
                         }
                     ]
                 },
@@ -353,6 +373,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "flex": 1,
+                        "hidden": true,
                         "text": "Acciones"
                     },
                     "name": "MyColumn7",
@@ -360,7 +381,7 @@
                         "flex": "number",
                         "text": "string"
                     },
-                    "designerId": "89d65e67-6ff9-4328-8b91-61bb8cc0961f",
+                    "designerId": "fd115d59-768c-48d2-a6bd-9cd97c2c1abc",
                     "cn": [
                         {
                             "type": "fixedfunction",
@@ -396,7 +417,7 @@
                                     "                iconCls:'general-icono-editar',",
                                     "                componentCls: 'general-fondo-boton-configurar',",
                                     "                menu: [{",
-                                    "                    text:'Editar Usuario',",
+                                    "                    text:'Editar Canción',",
                                     "                    handler: function() {",
                                     "                        if(!navigator.onLine){",
                                     "                            SRMusicalWeb.app.toast(SRMusicalWeb.globals.TOASTID,SRMusicalWeb.globals.TOASTMSJERROROFFLINE,SRMusicalWeb.globals.TOASTTITLEALERTA);",
@@ -425,7 +446,7 @@
                                 "fn": "string",
                                 "implHandler": "code"
                             },
-                            "designerId": "7e20f839-3e37-46de-b272-25b62ae067ba"
+                            "designerId": "88b1e4d1-3758-4e2c-ab0b-15ea8dca103d"
                         }
                     ]
                 },
@@ -437,7 +458,7 @@
                     },
                     "codeClass": null,
                     "name": "MyTable",
-                    "designerId": "27664915-636f-4693-9b80-7a7c2d08242b"
+                    "designerId": "36b7f340-fc33-455f-a7f0-feaf6944e4b9"
                 }
             ]
         },
@@ -466,7 +487,7 @@
                 "id": "string",
                 "layout": "string"
             },
-            "designerId": "68bdade0-d1ed-4f67-a531-d3f9748c05c3",
+            "designerId": "7530e1f3-488f-42a2-80f0-ece7ea48f1b3",
             "cn": [
                 {
                     "type": "Ext.button.Button",
@@ -476,7 +497,8 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "id": "btn_registrar_usuario",
+                        "hidden": true,
+                        "id": "btn_registrar_usuario1",
                         "text": "Registrar",
                         "width": 100
                     },
@@ -487,7 +509,7 @@
                         "text": "string",
                         "width": "auto"
                     },
-                    "designerId": "85419c42-7dac-42e5-be26-829f847ff7e7",
+                    "designerId": "2a454311-6b1c-427d-bb39-b52519da333a",
                     "cn": [
                         {
                             "type": "basiceventbinding",
@@ -513,7 +535,7 @@
                                 "name": "string",
                                 "scope": "string"
                             },
-                            "designerId": "0ae6f61c-45f5-450c-be77-c64d93faa637"
+                            "designerId": "ec0a982a-f9ec-4aca-88e3-77d5f89282ed"
                         }
                     ]
                 },
@@ -525,7 +547,8 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "id": "btn_eliminar_usuario",
+                        "hidden": null,
+                        "id": "btn_eliminar_cancion",
                         "margin": "0 0 0 5",
                         "text": "Eliminar",
                         "width": 100
@@ -538,7 +561,7 @@
                         "width": "auto",
                         "margin": "auto"
                     },
-                    "designerId": "1ca5a378-d8c1-4451-b315-83b4f7db3664",
+                    "designerId": "14c1f1bf-78a1-4318-a6d2-e1e8119e8766",
                     "cn": [
                         {
                             "type": "basiceventbinding",
@@ -548,10 +571,10 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "fn": "onBtn_eliminar_usuarioClick",
+                                "fn": "onBtn_eliminar_cancionClick",
                                 "implHandler": [
-                                    "Ext.getCmp('btn_eliminar_usuario').setDisabled(true);",
-                                    "var grid = Ext.getCmp('gridUsuarios');",
+                                    "button.setDisabled(true);",
+                                    "var grid = Ext.getCmp('gridCanciones');",
                                     "var records = grid.getSelectionModel().getSelection()[0];",
                                     "if(records){",
                                     "    var rows = grid.getSelectionModel().getSelection();",
@@ -571,7 +594,7 @@
                                     "        });",
                                     "    }else{",
                                     "        SRMusicalWeb.app.message(SRMusicalWeb.globals.MESSAGEID,SRMusicalWeb.globals.MESSAGETITLEALERTA,SRMusicalWeb.globals.MESSAGEMSJNOREGISTRO,SRMusicalWeb.globals.MESSAGETYPEOK);",
-                                    "        Ext.getCmp('btn_eliminar_usuario').enable();",
+                                    "        button.enable();",
                                     "    }",
                                     "",
                                     "    function show(btn){",
@@ -580,32 +603,32 @@
                                     "            store.remove(rows);",
                                     "            store.sync({",
                                     "                callback: function(batch, eOpts) {",
-                                    "                    Ext.getCmp('btn_eliminar_usuario').enable();",
+                                    "                    button.enable();",
                                     "                    if(batch.operations[0].success){",
-                                    "                        PaujilWeb.app.toast(SRMusicalWeb.globals.TOASTID,SRMusicalWeb.globals.TOASTMSJOPERACIONEXITOSA,SRMusicalWeb.globals.TOASTTITLEMENSAJE);",
+                                    "                        SRMusicalWeb.app.toast(SRMusicalWeb.globals.TOASTID,SRMusicalWeb.globals.TOASTMSJOPERACIONEXITOSA,SRMusicalWeb.globals.TOASTTITLEMENSAJE);",
                                     "                    }",
                                     "                }",
                                     "            });",
                                     "        }else{",
-                                    "            Ext.getCmp('btn_eliminar_usuario').enable();",
+                                    "            button.enable();",
                                     "        }",
                                     "    }",
                                     "}else {",
                                     "    SRMusicalWeb.app.message(SRMusicalWeb.globals.MESSAGEID,SRMusicalWeb.globals.MESSAGETITLEALERTA,SRMusicalWeb.globals.MESSAGEMSJNOREGISTRO,SRMusicalWeb.globals.MESSAGETYPEOK);",
-                                    "    Ext.getCmp('btn_eliminar_usuario').enable();",
+                                    "    button.enable();",
                                     "}"
                                 ],
                                 "name": "click",
                                 "scope": "me"
                             },
-                            "name": "onBtn_eliminar_usuarioClick",
+                            "name": "onBtn_eliminar_cancionClick",
                             "configAlternates": {
                                 "fn": "string",
                                 "implHandler": "code",
                                 "name": "string",
                                 "scope": "string"
                             },
-                            "designerId": "cbe2db45-cbd1-42e9-993c-286c4fe79b16"
+                            "designerId": "b192d73d-cb05-4a30-9416-b33c9b06cd1c"
                         }
                     ]
                 }
