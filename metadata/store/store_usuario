@@ -10,12 +10,12 @@
         "model": "model_usuario",
         "storeId": "store_usuario"
     },
-    "name": "MyJsonStore",
     "configAlternates": {
         "designer|userClassName": "string",
         "model": "model",
         "storeId": "string"
     },
+    "name": "MyJsonStore",
     "designerId": "7efe682b-1ff9-45cd-8ead-fa782a90d5c5",
     "cn": [
         {
@@ -35,10 +35,10 @@
                     "}"
                 ]
             },
-            "name": "MyAjaxProxy8",
             "configAlternates": {
                 "api": "object"
             },
+            "name": "MyAjaxProxy8",
             "designerId": "00713503-c509-4263-8065-af4696b57431",
             "cn": [
                 {
@@ -52,11 +52,11 @@
                         "messageProperty": "message",
                         "rootProperty": "data"
                     },
-                    "name": "MyJsonReader8",
                     "configAlternates": {
                         "messageProperty": "string",
                         "rootProperty": "string"
                     },
+                    "name": "MyJsonReader8",
                     "designerId": "a2d3442b-aa97-43b7-ac08-663d8f71efe0"
                 },
                 {
@@ -69,10 +69,10 @@
                     "userConfig": {
                         "allowSingle": false
                     },
-                    "name": "MyJsonWriter1",
                     "configAlternates": {
                         "allowSingle": "boolean"
                     },
+                    "name": "MyJsonWriter1",
                     "designerId": "7ce8da4a-0740-4b8e-9d69-221240cab7df"
                 },
                 {
@@ -90,13 +90,13 @@
                         "name": "exception",
                         "scope": "me"
                     },
-                    "name": "onAjaxException",
                     "configAlternates": {
                         "fn": "string",
                         "implHandler": "code",
                         "name": "string",
                         "scope": "string"
                     },
+                    "name": "onAjaxException",
                     "designerId": "0926f59b-fa42-42c9-8410-042610de3080"
                 }
             ]

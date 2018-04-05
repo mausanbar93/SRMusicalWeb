@@ -16,7 +16,6 @@
         "title": "PANEL USUARIO",
         "width": null
     },
-    "name": "MyPanel",
     "configAlternates": {
         "scrollable": "boolean",
         "designer|userAlias": "string",
@@ -29,6 +28,7 @@
         "container|align": "string",
         "layout": "string"
     },
+    "name": "MyPanel",
     "designerId": "2f34a62b-0846-46f4-a7f8-a68c0d290b00",
     "viewControllerInstanceId": "ddc0df51-8942-4314-bd91-cac1c98c86a1",
     "viewModelInstanceId": "c3974ab8-3ddd-4ab2-8c20-deb09277b31d",
@@ -50,7 +50,6 @@
                 "store": "store_usuario",
                 "title": "Listado Usuario"
             },
-            "name": "MyGridPanel",
             "configAlternates": {
                 "flex": "number",
                 "store": "store",
@@ -58,8 +57,10 @@
                 "autoLoad": "boolean",
                 "emptyText": "string",
                 "id": "string",
-                "layout|flex": "number"
+                "layout|flex": "number",
+                "height": "auto"
             },
+            "name": "MyGridPanel",
             "designerId": "d8ec496d-9b2e-49cc-8281-ff2c488191c1",
             "cn": [
                 {
@@ -84,12 +85,12 @@
                         "flex": 1,
                         "text": "Id"
                     },
-                    "name": "MyColumn6",
                     "configAlternates": {
                         "dataIndex": "datafield",
                         "flex": "number",
                         "text": "string"
                     },
+                    "name": "MyColumn6",
                     "designerId": "cfceb4ff-9517-4905-a0f7-7de17181e50a"
                 },
                 {
@@ -104,12 +105,12 @@
                         "flex": 2,
                         "text": "Nombre Completo"
                     },
-                    "name": "MyColumn",
                     "configAlternates": {
                         "dataIndex": "datafield",
                         "flex": "number",
                         "text": "string"
                     },
+                    "name": "MyColumn",
                     "designerId": "f0dcd576-dd1f-44e6-bea1-d674e1273c8d",
                     "cn": [
                         {
@@ -138,12 +139,12 @@
                                     "}"
                                 ]
                             },
-                            "name": "renderer",
                             "configAlternates": {
                                 "designer|params": "typedarray",
                                 "fn": "string",
                                 "implHandler": "code"
                             },
+                            "name": "renderer",
                             "designerId": "b3869e61-b324-4620-b596-26e013d2c2f7"
                         }
                     ]
@@ -160,12 +161,12 @@
                         "flex": 1,
                         "text": "Cuenta"
                     },
-                    "name": "MyColumn2",
                     "configAlternates": {
                         "dataIndex": "datafield",
                         "flex": "number",
                         "text": "string"
                     },
+                    "name": "MyColumn2",
                     "designerId": "9001de74-d50a-4126-aeda-1c118e5da5e0"
                 },
                 {
@@ -180,12 +181,12 @@
                         "flex": 1,
                         "text": "Contraseña"
                     },
-                    "name": "MyColumn4",
                     "configAlternates": {
                         "dataIndex": "datafield",
                         "flex": "number",
                         "text": "string"
                     },
+                    "name": "MyColumn4",
                     "designerId": "5b5e2498-a1c7-4291-9c74-778d6937f0fb"
                 },
                 {
@@ -200,12 +201,12 @@
                         "flex": 1,
                         "text": "Ocupación"
                     },
-                    "name": "MyColumn3",
                     "configAlternates": {
                         "dataIndex": "datafield",
                         "flex": "number",
                         "text": "string"
                     },
+                    "name": "MyColumn3",
                     "designerId": "84d3eebb-7410-48bb-b8fb-0e92dac9a2c5"
                 },
                 {
@@ -220,12 +221,12 @@
                         "flex": 1,
                         "text": "Fecha de Nacimiento"
                     },
-                    "name": "MyDateColumn",
                     "configAlternates": {
                         "dataIndex": "datafield",
                         "flex": "number",
                         "text": "string"
                     },
+                    "name": "MyDateColumn",
                     "designerId": "1e8d18e8-f30a-462d-8e52-c2156eeed88b"
                 },
                 {
@@ -240,12 +241,12 @@
                         "flex": 1,
                         "text": "Correo"
                     },
-                    "name": "MyColumn8",
                     "configAlternates": {
                         "dataIndex": "datafield",
                         "flex": "number",
                         "text": "string"
                     },
+                    "name": "MyColumn8",
                     "designerId": "694f115d-3fc2-440c-8f60-a67264cb3d8f"
                 },
                 {
@@ -260,12 +261,12 @@
                         "flex": 1,
                         "text": "Dirección"
                     },
-                    "name": "MyColumn1",
                     "configAlternates": {
                         "dataIndex": "datafield",
                         "flex": "number",
                         "text": "string"
                     },
+                    "name": "MyColumn1",
                     "designerId": "dacbefa2-5e5e-4fa4-a439-999bce7f8b5f"
                 },
                 {
@@ -280,12 +281,12 @@
                         "flex": 1,
                         "text": "Teléfono"
                     },
-                    "name": "MyColumn5",
                     "configAlternates": {
                         "dataIndex": "datafield",
                         "flex": "number",
                         "text": "string"
                     },
+                    "name": "MyColumn5",
                     "designerId": "ac3ea66d-58cc-41a6-b0a7-cb4b3a9ff090"
                 },
                 {
@@ -300,12 +301,12 @@
                         "flex": 1,
                         "text": "Estado"
                     },
-                    "name": "MyColumn9",
                     "configAlternates": {
                         "dataIndex": "datafield",
                         "flex": "number",
                         "text": "string"
                     },
+                    "name": "MyColumn9",
                     "designerId": "bdba66df-65da-490f-8b91-a5dd4a3d216f",
                     "cn": [
                         {
@@ -334,12 +335,12 @@
                                     "}"
                                 ]
                             },
-                            "name": "renderer",
                             "configAlternates": {
                                 "designer|params": "typedarray",
                                 "fn": "string",
                                 "implHandler": "code"
                             },
+                            "name": "renderer",
                             "designerId": "b1a4b6e0-0e0c-4827-b8a0-b36a525fcea3"
                         }
                     ]
@@ -355,11 +356,11 @@
                         "flex": 1,
                         "text": "Acciones"
                     },
-                    "name": "MyColumn7",
                     "configAlternates": {
                         "flex": "number",
                         "text": "string"
                     },
+                    "name": "MyColumn7",
                     "designerId": "89d65e67-6ff9-4328-8b91-61bb8cc0961f",
                     "cn": [
                         {
@@ -419,12 +420,12 @@
                                     "return Ext.String.format('<div id=\"{0}\"></div>', id);"
                                 ]
                             },
-                            "name": "renderer",
                             "configAlternates": {
                                 "designer|params": "typedarray",
                                 "fn": "string",
                                 "implHandler": "code"
                             },
+                            "name": "renderer",
                             "designerId": "7e20f839-3e37-46de-b272-25b62ae067ba"
                         }
                     ]
@@ -456,7 +457,6 @@
                 "dock": "bottom",
                 "layout": "hbox"
             },
-            "name": "MyContainer4",
             "configAlternates": {
                 "container|align": "string",
                 "container|pack": "string",
@@ -466,6 +466,7 @@
                 "id": "string",
                 "layout": "string"
             },
+            "name": "MyContainer4",
             "designerId": "68bdade0-d1ed-4f67-a531-d3f9748c05c3",
             "cn": [
                 {
@@ -480,13 +481,13 @@
                         "text": "Registrar",
                         "width": 100
                     },
-                    "name": "MyButton4",
                     "configAlternates": {
                         "hidden": "boolean",
                         "id": "string",
                         "text": "string",
                         "width": "auto"
                     },
+                    "name": "MyButton4",
                     "designerId": "85419c42-7dac-42e5-be26-829f847ff7e7",
                     "cn": [
                         {
@@ -506,13 +507,13 @@
                                 "name": "click",
                                 "scope": "me"
                             },
-                            "name": "onBtn_registrar_usuarioClick",
                             "configAlternates": {
                                 "fn": "string",
                                 "implHandler": "code",
                                 "name": "string",
                                 "scope": "string"
                             },
+                            "name": "onBtn_registrar_usuarioClick",
                             "designerId": "0ae6f61c-45f5-450c-be77-c64d93faa637"
                         }
                     ]
@@ -530,7 +531,6 @@
                         "text": "Eliminar",
                         "width": 100
                     },
-                    "name": "MyButton8",
                     "configAlternates": {
                         "hidden": "boolean",
                         "id": "string",
@@ -538,6 +538,7 @@
                         "width": "auto",
                         "margin": "auto"
                     },
+                    "name": "MyButton8",
                     "designerId": "1ca5a378-d8c1-4451-b315-83b4f7db3664",
                     "cn": [
                         {
@@ -598,13 +599,13 @@
                                 "name": "click",
                                 "scope": "me"
                             },
-                            "name": "onBtn_eliminar_usuarioClick",
                             "configAlternates": {
                                 "fn": "string",
                                 "implHandler": "code",
                                 "name": "string",
                                 "scope": "string"
                             },
+                            "name": "onBtn_eliminar_usuarioClick",
                             "designerId": "cbe2db45-cbd1-42e9-993c-286c4fe79b16"
                         }
                     ]

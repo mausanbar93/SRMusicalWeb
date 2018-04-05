@@ -13,6 +13,14 @@
         "id": "main",
         "layout": "vbox"
     },
+    "configAlternates": {
+        "container|align": "string",
+        "designer|initialView": "boolean",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "id": "string",
+        "layout": "string"
+    },
     "name": "MyViewport",
     "designerId": "a2ad86d4-3d90-42a4-8dd8-a154cf272606",
     "viewControllerInstanceId": "cdcc4b8b-e50b-4b92-82a5-97c79e46e67b",
@@ -39,6 +47,10 @@
             "userConfig": {
                 "hidden": true,
                 "layout|flex": 1
+            },
+            "configAlternates": {
+                "hidden": "boolean",
+                "layout|flex": "number"
             },
             "name": "main_aplicacion1",
             "designerId": "624184d1-a729-483d-89ab-5a4b03f9652a",

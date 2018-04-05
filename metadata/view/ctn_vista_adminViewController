@@ -9,5 +9,9 @@
         "designer|userAlias": "ctn_vista_admin",
         "designer|userClassName": "ctn_vista_adminViewController"
     },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
     "designerId": "c877c17b-c102-4b2c-a479-e0a4d897e427"
 }

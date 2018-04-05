@@ -11,13 +11,15 @@
             "model_usuario",
             "model_generico",
             "model_sesion",
-            "model_cancion"
+            "model_cancion",
+            "model_playlista"
         ],
         "name": "SRMusicalWeb",
         "stores": [
             "store_usuario",
             "store_sesion",
-            "store_cancion"
+            "store_cancion",
+            "store_playlista"
         ],
         "title": "SRMusicalWeb",
         "views": [
@@ -32,7 +34,6 @@
             "tbp_gestion"
         ]
     },
-    "name": "Application",
     "configAlternates": {
         "favIconUrl": "string",
         "models": "typedarray",
@@ -41,6 +42,7 @@
         "title": "string",
         "views": "typedarray"
     },
+    "name": "Application",
     "designerId": "application",
     "cn": [
         {
@@ -72,6 +74,17 @@
                     "                if(datos.ocupacion !== 'Administrador'){",
                     "                    Ext.getCmp('ctn_vista_admin').hide();",
                     "                    Ext.getCmp('ctn_vista_cliente').show();",
+                    "                    Ext.getStore('store_playlista').load({",
+                    "                        params:{",
+                    "                            usuario:datos.id",
+                    "                        },callback: function(records, operation, success){",
+                    "                            if(success){",
+                    "                                console.log(\"EXITO STORE-PLAYLISTA\");",
+                    "                            }else{",
+                    "                                console.log(\"ERROR STORE-PLAYLISTA\");",
+                    "                            }",
+                    "                        }",
+                    "                    });",
                     "                }",
                     "                Ext.getCmp('lbl_bienvenido').setText(datos.nombre+' '+datos.apellido+' ('+datos.ocupacion+')');",
                     "            }",
@@ -83,11 +96,11 @@
                     "});"
                 ]
             },
-            "name": "launch",
             "configAlternates": {
                 "fn": "string",
                 "implHandler": "code"
             },
+            "name": "launch",
             "designerId": "d6d03262-1438-4caf-813d-7495df838d6a"
         },
         {
@@ -132,12 +145,12 @@
                     "}"
                 ]
             },
-            "name": "toast",
             "configAlternates": {
                 "designer|params": "typedarray",
                 "fn": "string",
                 "implHandler": "code"
             },
+            "name": "toast",
             "designerId": "010b8b9e-1e92-4fbb-9ed6-b0728fc557c0"
         },
         {
@@ -171,12 +184,12 @@
                     "}"
                 ]
             },
-            "name": "message",
             "configAlternates": {
                 "designer|params": "typedarray",
                 "fn": "string",
                 "implHandler": "code"
             },
+            "name": "message",
             "designerId": "653e96d2-e0b8-447d-b7f6-eed3e870d38a"
         },
         {
@@ -247,12 +260,12 @@
                     "SRMusicalWeb.app.toast(SRMusicalWeb.globals.TOASTID,mensaje,SRMusicalWeb.globals.TOASTTITLEMENSAJE);"
                 ]
             },
-            "name": "showError",
             "configAlternates": {
                 "designer|params": "typedarray",
                 "fn": "string",
                 "implHandler": "code"
             },
+            "name": "showError",
             "designerId": "de532b6e-1ec5-4d75-bffd-89773f98997b"
         },
         {
@@ -290,10 +303,15 @@
                     "",
                     "    TOOLTIPCLOSEPANEL: 'Cerrar ventana',",
                     "    LONGITUDTEXTOLETRA: 50,",
+                    "    LONGITUDTEXTOCANCION: 50,",
                     "    PASSWORDREGEX: '^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])',",
                     "    MSJPASSWORDREGEX: '<div><div style=\"font-size: 20px;\">Seguridad</div></br>La contraseña debe contener al menos un carácter </br><ul><li>1 mayúscula</li><li>1 minúscula</li><li>1 caracter especial(!@#$%^&*)</li><li>1 número</li></ul></div>'",
                     "};"
                 ]
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code"
             },
             "name": "cargarVariablesGlobales",
             "designerId": "3efe7109-c5bb-4c81-8d3f-857dd2898733"
@@ -326,6 +344,11 @@
                     "    }",
                     "});"
                 ]
+            },
+            "configAlternates": {
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code"
             },
             "name": "animarFlechaTip",
             "designerId": "222ffb56-2013-4cf1-9fc7-683906899e82"
@@ -361,6 +384,11 @@
                     "",
                     "return result;"
                 ]
+            },
+            "configAlternates": {
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code"
             },
             "name": "convertirSegundos",
             "designerId": "d8870859-d215-480c-81f5-f0323b500aa3"

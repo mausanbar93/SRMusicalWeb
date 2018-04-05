@@ -8,6 +8,9 @@
     "userConfig": {
         "designer|userClassName": "model_cancion"
     },
+    "configAlternates": {
+        "designer|userClassName": "string"
+    },
     "name": "MyModel",
     "designerId": "70f6ed5d-ffee-4986-b506-d2085a0d0c07",
     "cn": [
@@ -20,6 +23,9 @@
             "codeClass": null,
             "userConfig": {
                 "name": "id"
+            },
+            "configAlternates": {
+                "name": "string"
             },
             "name": "MyField",
             "designerId": "497ac8c0-7dc5-4e22-b31c-2e0f442d93d3"
@@ -34,6 +40,9 @@
             "userConfig": {
                 "name": "artista"
             },
+            "configAlternates": {
+                "name": "string"
+            },
             "name": "MyField1",
             "designerId": "8f333793-b5e9-4a90-b94e-935a1cfe27af"
         },
@@ -46,6 +55,9 @@
             "codeClass": null,
             "userConfig": {
                 "name": "titulo"
+            },
+            "configAlternates": {
+                "name": "string"
             },
             "name": "MyField2",
             "designerId": "7e300841-4639-41b1-8d57-6fdc0f43f890"
@@ -60,6 +72,9 @@
             "userConfig": {
                 "name": "letra"
             },
+            "configAlternates": {
+                "name": "string"
+            },
             "name": "MyField3",
             "designerId": "293a506d-fa54-42de-b299-8745bb0d8d21"
         },
@@ -72,6 +87,9 @@
             "codeClass": null,
             "userConfig": {
                 "name": "api"
+            },
+            "configAlternates": {
+                "name": "string"
             },
             "name": "MyField4",
             "designerId": "f8911ffc-fde9-401d-8234-3b30410d8e84"
@@ -86,6 +104,9 @@
             "userConfig": {
                 "name": "estado"
             },
+            "configAlternates": {
+                "name": "string"
+            },
             "name": "MyField5",
             "designerId": "46f781da-b39f-4273-95c9-7a34220bbef4"
         },
@@ -98,6 +119,9 @@
             "codeClass": null,
             "userConfig": {
                 "name": "rankingBillboard"
+            },
+            "configAlternates": {
+                "name": "string"
             },
             "name": "MyField6",
             "designerId": "69caa0eb-afa3-4070-a4ee-972c9585784a"
@@ -112,6 +136,9 @@
             "userConfig": {
                 "name": "semanaBillboard"
             },
+            "configAlternates": {
+                "name": "string"
+            },
             "name": "MyField9",
             "designerId": "5e88829a-f896-41e8-afb8-a74d194f15e2"
         },
@@ -124,6 +151,9 @@
             "codeClass": null,
             "userConfig": {
                 "name": "numeroVisualizacion"
+            },
+            "configAlternates": {
+                "name": "string"
             },
             "name": "MyField12",
             "designerId": "27bd46ef-bbaa-4538-8cee-648d45cf8839"
@@ -138,6 +168,9 @@
             "userConfig": {
                 "name": "duracionSegundo"
             },
+            "configAlternates": {
+                "name": "string"
+            },
             "name": "MyField13",
             "designerId": "6984f952-ecba-4c3d-9add-fdc67d7684b7"
         },
@@ -150,6 +183,9 @@
             "codeClass": null,
             "userConfig": {
                 "name": "valoracionReferencia"
+            },
+            "configAlternates": {
+                "name": "string"
             },
             "name": "MyField14",
             "designerId": "ec538cfa-07a0-43e0-8f5e-d675857f8616"
@@ -164,6 +200,9 @@
             "userConfig": {
                 "name": "estadoByEstadoReferenciaId"
             },
+            "configAlternates": {
+                "name": "string"
+            },
             "name": "MyField15",
             "designerId": "d10c149e-c131-42e2-a6b3-20921fe3d1be"
         },
@@ -176,6 +215,9 @@
             "codeClass": null,
             "userConfig": {
                 "name": "estadoByEstadoReferenciaNombre"
+            },
+            "configAlternates": {
+                "name": "string"
             },
             "name": "MyField16",
             "designerId": "411d91c1-45f9-4467-8fa9-a65268eadd0f"

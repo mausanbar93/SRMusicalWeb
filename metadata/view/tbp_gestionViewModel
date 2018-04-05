@@ -9,5 +9,9 @@
         "designer|userAlias": "tbp_gestion",
         "designer|userClassName": "tbp_gestionViewModel"
     },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
     "designerId": "2f901442-32f5-493e-8f0e-f4cbab8ecc75"
 }

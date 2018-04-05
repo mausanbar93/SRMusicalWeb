@@ -10,6 +10,11 @@
         "model": "model_sesion",
         "storeId": "store_sesion"
     },
+    "configAlternates": {
+        "designer|userClassName": "string",
+        "model": "model",
+        "storeId": "string"
+    },
     "name": "MyJsonStore",
     "designerId": "3d074f34-ea6d-40ba-8f6a-28a904e878a2",
     "cn": [
@@ -27,6 +32,9 @@
                     "}"
                 ]
             },
+            "configAlternates": {
+                "api": "object"
+            },
             "name": "MyAjaxProxy1",
             "designerId": "32bca765-10ef-498b-8d95-7ddd0f1d72d7",
             "cn": [
@@ -40,6 +48,10 @@
                     "userConfig": {
                         "messageProperty": "message",
                         "rootProperty": "data"
+                    },
+                    "configAlternates": {
+                        "messageProperty": "string",
+                        "rootProperty": "string"
                     },
                     "name": "MyJsonReader1",
                     "designerId": "df4110ad-8c0c-4975-843f-17e32841e39c"

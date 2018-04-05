@@ -9,5 +9,9 @@
         "designer|userAlias": "main",
         "designer|userClassName": "mainViewController"
     },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
     "designerId": "cdcc4b8b-e50b-4b92-82a5-97c79e46e67b"
 }

@@ -12,7 +12,19 @@
         "height": null,
         "id": "ctn_vista_cliente",
         "layout": "hbox",
+        "padding": 50,
         "width": null
+    },
+    "configAlternates": {
+        "container|align": "string",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "height": "auto",
+        "id": "string",
+        "layout": "string",
+        "width": "auto",
+        "designer|initialView": "boolean",
+        "padding": "auto"
     },
     "name": "MyContainer1",
     "designerId": "2c5ed34b-f955-4bb6-991c-177f6c001475",
@@ -27,10 +39,20 @@
             },
             "codeClass": null,
             "userConfig": {
+                "cls": [
+                    "ctn-principal"
+                ],
                 "container|align": "stretch",
                 "designer|displayName": "ctn_control",
                 "layout": "vbox",
                 "layout|flex": 1
+            },
+            "configAlternates": {
+                "container|align": "string",
+                "designer|displayName": "string",
+                "layout": "string",
+                "layout|flex": "number",
+                "cls": "typedarray"
             },
             "name": "MyContainer1",
             "designerId": "03821b63-e84c-471f-bfa6-148540e1760f",
@@ -43,24 +65,258 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|displayName": "ctn_reproductor"
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "designer|displayName": "ctn_preview",
+                        "id": "ctn_preview",
+                        "layout": "vbox",
+                        "layout|flex": 1
                     },
-                    "name": "MyContainer3",
-                    "designerId": "1cfb5afd-8fc6-4599-ba15-90445cd45213"
+                    "configAlternates": {
+                        "container|align": "string",
+                        "container|pack": "string",
+                        "designer|displayName": "string",
+                        "id": "string",
+                        "layout": "string",
+                        "layout|flex": "number"
+                    },
+                    "name": "MyContainer16",
+                    "designerId": "8d7dc9b8-1d66-4599-b5a6-6d1bfa62abcd",
+                    "cn": [
+                        {
+                            "type": "Ext.form.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "text": "Selecionar canción para reproducir ..."
+                            },
+                            "configAlternates": {
+                                "text": "string"
+                            },
+                            "name": "MyLabel6",
+                            "designerId": "5d5f53b4-b8b1-40b3-87e4-22b902eba639"
+                        }
+                    ]
                 },
                 {
-                    "type": "Ext.button.Button",
+                    "type": "Ext.container.Container",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "layout|flex": null,
-                        "text": "MyButton"
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "designer|displayName": "ctn_reproductor",
+                        "hidden": true,
+                        "id": "ctn_reproductor",
+                        "layout": "vbox",
+                        "layout|flex": 1
                     },
-                    "name": "MyButton7",
-                    "designerId": "1be370f6-ff0e-40e9-a7db-a1bf7ffe51a7"
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "container|align": "string",
+                        "container|pack": "string",
+                        "layout": "string",
+                        "layout|flex": "number",
+                        "hidden": "boolean",
+                        "id": "string"
+                    },
+                    "name": "MyContainer3",
+                    "designerId": "1cfb5afd-8fc6-4599-ba15-90445cd45213",
+                    "cn": [
+                        {
+                            "type": "Ext.Img",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "img_gif",
+                                "height": 400,
+                                "id": "img_gif",
+                                "src": "resources/images/gifs/music4.gif"
+                            },
+                            "configAlternates": {
+                                "src": "uri",
+                                "designer|displayName": "string",
+                                "height": "auto",
+                                "id": "string"
+                            },
+                            "name": "MyImg5",
+                            "designerId": "349a28f1-3a92-4f89-91a4-d4229b286666"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "middle",
+                        "container|pack": "center",
+                        "designer|displayName": "ctn_botones",
+                        "hidden": true,
+                        "id": "ctn_botones",
+                        "layout": "hbox",
+                        "layout|flex": 1
+                    },
+                    "configAlternates": {
+                        "container|align": "string",
+                        "container|pack": "string",
+                        "designer|displayName": "string",
+                        "hidden": "boolean",
+                        "id": "string",
+                        "layout": "string",
+                        "layout|flex": "number"
+                    },
+                    "name": "MyContainer10",
+                    "designerId": "eded7151-b29a-42c9-a749-2d2380d9758d",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "text": "Play"
+                            },
+                            "configAlternates": {
+                                "layout|flex": "number",
+                                "text": "string"
+                            },
+                            "name": "MyButton2",
+                            "designerId": "4aad300e-32ed-4e64-81f9-96d897fc6ef0",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onButtonClick",
+                                        "implHandler": [
+                                            "var audio = new Audio('../resources/songs/sonido.mp3');",
+                                            "if(audio)",
+                                            "    audio.play();"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onButtonClick",
+                                    "designerId": "fdcddec7-2bef-4dbc-bf0d-d28eebfb74a1"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "margin": "0 0 0 10",
+                                "text": "Pause"
+                            },
+                            "configAlternates": {
+                                "layout|flex": "number",
+                                "text": "string",
+                                "margin": "auto"
+                            },
+                            "name": "MyButton7",
+                            "designerId": "1be370f6-ff0e-40e9-a7db-a1bf7ffe51a7",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onButtonClick1",
+                                        "implHandler": [
+                                            "var audio = new Audio('../resources/songs/sonido.mp3');",
+                                            "audio.pause();"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onButtonClick1",
+                                    "designerId": "665cb54c-be81-403d-b9a0-87b3fa1d1e95"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "ctn_datos",
+                        "hidden": true,
+                        "id": "ctn_datos",
+                        "layout|flex": 1
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "hidden": "boolean",
+                        "id": "string",
+                        "layout|flex": "number"
+                    },
+                    "name": "MyContainer15",
+                    "designerId": "15e47988-ce51-4123-b477-09fa77cb2cb0",
+                    "cn": [
+                        {
+                            "type": "Ext.form.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "lbl_cancion_letra",
+                                "text": "Letra"
+                            },
+                            "configAlternates": {
+                                "id": "string",
+                                "text": "string"
+                            },
+                            "name": "MyLabel5",
+                            "designerId": "2ec798b3-a259-43d2-9223-ce050ea239e8"
+                        }
+                    ]
                 }
             ]
         },
@@ -72,8 +328,22 @@
             },
             "codeClass": null,
             "userConfig": {
+                "cls": [
+                    "ctn-principal"
+                ],
+                "container|align": "stretch",
+                "container|pack": "center",
                 "designer|displayName": "ctn_lista",
+                "layout": "vbox",
                 "layout|flex": 1
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "layout|flex": "number",
+                "cls": "typedarray",
+                "container|align": "string",
+                "container|pack": "string",
+                "layout": "string"
             },
             "name": "MyContainer14",
             "designerId": "bd093bee-7d11-4847-9ccb-57679bba4ace",
@@ -88,12 +358,29 @@
                     "userConfig": {
                         "designer|displayName": "gridListaCanciones",
                         "id": "gridListaCanciones",
+                        "store": "store_playlista",
                         "title": "Canciones"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "id": "string",
+                        "title": "string",
+                        "store": "store"
                     },
                     "name": "MyGridPanel1",
                     "designerId": "44eba585-a1aa-482e-8cea-db607eabfd90",
                     "cn": [
                         {
+                            "type": "Ext.selection.RowModel",
+                            "reference": {
+                                "name": "selModel",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "MyRowSelectionModel",
+                            "designerId": "9fa4094e-53a4-4d1f-b0a5-0e710542a562"
+                        },
+                        {
                             "type": "Ext.grid.column.Column",
                             "reference": {
                                 "name": "columns",
@@ -101,12 +388,55 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "dataIndex": "string",
+                                "dataIndex": "titulo",
                                 "designer|displayName": "col_cancion",
+                                "flex": 2,
                                 "text": "Canción"
                             },
+                            "configAlternates": {
+                                "dataIndex": "datafield",
+                                "designer|displayName": "string",
+                                "text": "string",
+                                "flex": "number"
+                            },
                             "name": "MyColumn10",
-                            "designerId": "f1722307-70e9-48d5-b260-e8badd8cfe4a"
+                            "designerId": "f1722307-70e9-48d5-b260-e8badd8cfe4a",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "value",
+                                            "metaData",
+                                            "record",
+                                            "rowIndex",
+                                            "colIndex",
+                                            "store",
+                                            "view"
+                                        ],
+                                        "fn": "renderer",
+                                        "implHandler": [
+                                            "var cancion = record.data.artista +' - '+ record.data.titulo;",
+                                            "if(cancion.length>SRMusicalWeb.globals.LONGITUDTEXTOCANCION)",
+                                            "    metaData.tdAttr = 'data-qtip=\"' + cancion + '\"';",
+                                            "    cancion = cancion.slice(0,SRMusicalWeb.globals.LONGITUDTEXTOCANCION)+\"...\";",
+                                            "return cancion;"
+                                        ]
+                                    },
+                                    "configAlternates": {
+                                        "designer|params": "typedarray",
+                                        "fn": "string",
+                                        "implHandler": "code"
+                                    },
+                                    "name": "renderer",
+                                    "designerId": "dfccfe86-e577-49ec-9757-da8bce9a8755"
+                                }
+                            ]
                         },
                         {
                             "type": "Ext.grid.column.Column",
@@ -116,12 +446,52 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "dataIndex": "string",
+                                "dataIndex": "duracion",
                                 "designer|displayName": "col_duracion",
+                                "flex": 1,
                                 "text": "Duración"
                             },
+                            "configAlternates": {
+                                "dataIndex": "datafield",
+                                "designer|displayName": "string",
+                                "text": "string",
+                                "flex": "number"
+                            },
                             "name": "MyColumn11",
-                            "designerId": "5f99443b-8afe-4001-999b-5646726dec69"
+                            "designerId": "5f99443b-8afe-4001-999b-5646726dec69",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "value",
+                                            "metaData",
+                                            "record",
+                                            "rowIndex",
+                                            "colIndex",
+                                            "store",
+                                            "view"
+                                        ],
+                                        "fn": "renderer",
+                                        "implHandler": [
+                                            "var retorno = SRMusicalWeb.app.convertirSegundos(value);",
+                                            "return retorno;"
+                                        ]
+                                    },
+                                    "configAlternates": {
+                                        "designer|params": "typedarray",
+                                        "fn": "string",
+                                        "implHandler": "code"
+                                    },
+                                    "name": "renderer",
+                                    "designerId": "a4415a36-bb8a-4da8-962f-dc7ea67bcc4e"
+                                }
+                            ]
                         },
                         {
                             "type": "Ext.grid.column.Column",
@@ -131,12 +501,52 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "dataIndex": "string",
+                                "dataIndex": "valoracion",
                                 "designer|displayName": "col_valoracion",
+                                "flex": 1,
                                 "text": "Valoración"
                             },
+                            "configAlternates": {
+                                "dataIndex": "datafield",
+                                "designer|displayName": "string",
+                                "text": "string",
+                                "flex": "number"
+                            },
                             "name": "MyColumn12",
-                            "designerId": "9a0f617c-50b0-4a86-b9c8-5496d4525d69"
+                            "designerId": "9a0f617c-50b0-4a86-b9c8-5496d4525d69",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "value",
+                                            "metaData",
+                                            "record",
+                                            "rowIndex",
+                                            "colIndex",
+                                            "store",
+                                            "view"
+                                        ],
+                                        "fn": "renderer",
+                                        "implHandler": [
+                                            "var retorno = (Math.round(value * 100) / 100);",
+                                            "return retorno;"
+                                        ]
+                                    },
+                                    "configAlternates": {
+                                        "designer|params": "typedarray",
+                                        "fn": "string",
+                                        "implHandler": "code"
+                                    },
+                                    "name": "renderer",
+                                    "designerId": "5f7862d2-0a1b-41a3-97f8-12a0a01a11d0"
+                                }
+                            ]
                         },
                         {
                             "type": "Ext.view.Table",
@@ -147,6 +557,46 @@
                             "codeClass": null,
                             "name": "MyTable1",
                             "designerId": "1e918444-3da9-4c5d-9061-545edcf91923"
+                        },
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onGridListaCancionesSelect",
+                                "implHandler": [
+                                    "var gifs = ['resources/images/gifs/music1.gif','resources/images/gifs/music2.gif','resources/images/gifs/music3.gif','resources/images/gifs/music4.gif'];",
+                                    "var gif = gifs[Math.floor(Math.random() * gifs.length)];",
+                                    "",
+                                    "Ext.getCmp('ctn_preview').hide();",
+                                    "Ext.getCmp('img_gif').src = gif;",
+                                    "Ext.getCmp('ctn_reproductor').show();",
+                                    "",
+                                    "var url = record.data.urlAudio;",
+                                    "if(url)",
+                                    "    var audio = new Audio(record.data.urlAudio);",
+                                    "    audio.controls = true;",
+                                    "    audio.play();",
+                                    "",
+                                    "var letra = record.data.letra;",
+                                    "if(letra)",
+                                    "    Ext.getCmp('ctn_datos').show();",
+                                    "    Ext.getCmp('lbl_cancion_letra').setText(letra);"
+                                ],
+                                "name": "select",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onGridListaCancionesSelect",
+                            "designerId": "8fb5a73d-4935-45de-b75c-5b28c98c9a0a"
                         }
                     ]
                 }

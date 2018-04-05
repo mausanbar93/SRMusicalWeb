@@ -16,7 +16,6 @@
         "title": "PANEL CANCIÓN",
         "width": null
     },
-    "name": "pnl_usuario1",
     "configAlternates": {
         "scrollable": "boolean",
         "designer|userAlias": "string",
@@ -29,6 +28,7 @@
         "container|align": "string",
         "layout": "string"
     },
+    "name": "pnl_usuario1",
     "designerId": "f8ddc63e-50ec-4394-8fca-975feff77ac5",
     "viewControllerInstanceId": "6e21c597-3dec-47c8-aff9-228c29df0dc1",
     "viewModelInstanceId": "d3b899a0-b000-47ec-9e93-dbd144590756",
@@ -53,7 +53,6 @@
                 "titleAlign": null,
                 "width": 500
             },
-            "name": "MyGridPanel",
             "configAlternates": {
                 "flex": "number",
                 "store": "store",
@@ -62,8 +61,12 @@
                 "emptyText": "string",
                 "id": "string",
                 "layout|flex": "number",
-                "scrollable": "boolean"
+                "scrollable": "boolean",
+                "height": "auto",
+                "titleAlign": "string",
+                "width": "auto"
             },
+            "name": "MyGridPanel",
             "designerId": "dc9f0ef5-8832-4e2f-ae4f-10a3a1131c93",
             "cn": [
                 {
@@ -88,12 +91,12 @@
                         "flex": 1,
                         "text": "Id"
                     },
-                    "name": "MyColumn6",
                     "configAlternates": {
                         "dataIndex": "datafield",
                         "flex": "number",
                         "text": "string"
                     },
+                    "name": "MyColumn6",
                     "designerId": "ac07fd00-ad92-44dc-8fe0-7fb96415f403"
                 },
                 {
@@ -108,12 +111,12 @@
                         "flex": 2,
                         "text": "Título"
                     },
-                    "name": "MyColumn",
                     "configAlternates": {
                         "dataIndex": "datafield",
                         "flex": "number",
                         "text": "string"
                     },
+                    "name": "MyColumn",
                     "designerId": "9efa5d08-d329-42b6-9629-12542c037cd5"
                 },
                 {
@@ -128,12 +131,12 @@
                         "flex": 2,
                         "text": "Artista"
                     },
-                    "name": "MyColumn2",
                     "configAlternates": {
                         "dataIndex": "datafield",
                         "flex": "number",
                         "text": "string"
                     },
+                    "name": "MyColumn2",
                     "designerId": "8b8925f7-699f-492f-9ac4-f0206f5db975"
                 },
                 {
@@ -149,12 +152,13 @@
                         "text": "Letra",
                         "tooltipType": null
                     },
-                    "name": "MyColumn4",
                     "configAlternates": {
                         "dataIndex": "datafield",
                         "flex": "number",
-                        "text": "string"
+                        "text": "string",
+                        "tooltipType": "string"
                     },
+                    "name": "MyColumn4",
                     "designerId": "8237042c-c13b-49e3-b725-4e8f78428280",
                     "cn": [
                         {
@@ -183,6 +187,11 @@
                                     "return retorno;"
                                 ]
                             },
+                            "configAlternates": {
+                                "designer|params": "typedarray",
+                                "fn": "string",
+                                "implHandler": "code"
+                            },
                             "name": "renderer",
                             "designerId": "f841eb17-684e-477b-91e7-c3058a6198ab"
                         }
@@ -200,12 +209,12 @@
                         "flex": 2,
                         "text": "Estado"
                     },
-                    "name": "MyColumn3",
                     "configAlternates": {
                         "dataIndex": "datafield",
                         "flex": "number",
                         "text": "string"
                     },
+                    "name": "MyColumn3",
                     "designerId": "a35f54c1-7be0-4889-a965-01d86b1fbc0e"
                 },
                 {
@@ -220,12 +229,12 @@
                         "flex": 1,
                         "text": "Ranking Billboard"
                     },
-                    "name": "MyColumn13",
                     "configAlternates": {
                         "dataIndex": "datafield",
                         "flex": "number",
                         "text": "string"
                     },
+                    "name": "MyColumn13",
                     "designerId": "823168a3-fbb9-482f-9cf4-8a880352b535"
                 },
                 {
@@ -240,12 +249,12 @@
                         "flex": 1,
                         "text": "Semanas Ranking"
                     },
-                    "name": "MyColumn14",
                     "configAlternates": {
                         "dataIndex": "datafield",
                         "flex": "number",
                         "text": "string"
                     },
+                    "name": "MyColumn14",
                     "designerId": "b3606b95-595d-4832-ad14-caacd5d470be"
                 },
                 {
@@ -260,12 +269,12 @@
                         "flex": 1,
                         "text": "Número Visualizaciones"
                     },
-                    "name": "MyColumn8",
                     "configAlternates": {
                         "dataIndex": "datafield",
                         "flex": "number",
                         "text": "string"
                     },
+                    "name": "MyColumn8",
                     "designerId": "1fd72a4b-9244-49af-937c-d0d5afafa121"
                 },
                 {
@@ -280,12 +289,12 @@
                         "flex": 1,
                         "text": "Duración"
                     },
-                    "name": "MyColumn1",
                     "configAlternates": {
                         "dataIndex": "datafield",
                         "flex": "number",
                         "text": "string"
                     },
+                    "name": "MyColumn1",
                     "designerId": "d6fbdbac-7c3c-42e1-bddf-56bd8954c4ab",
                     "cn": [
                         {
@@ -311,6 +320,11 @@
                                     "return retorno;"
                                 ]
                             },
+                            "configAlternates": {
+                                "designer|params": "typedarray",
+                                "fn": "string",
+                                "implHandler": "code"
+                            },
                             "name": "renderer",
                             "designerId": "3688d8ab-7a5f-46ef-88e5-c1e05fd7b886"
                         }
@@ -328,12 +342,12 @@
                         "flex": 1,
                         "text": "Valoración"
                     },
-                    "name": "MyColumn5",
                     "configAlternates": {
                         "dataIndex": "datafield",
                         "flex": "number",
                         "text": "string"
                     },
+                    "name": "MyColumn5",
                     "designerId": "a7622970-ff7e-43da-8c75-b97e88697b4b",
                     "cn": [
                         {
@@ -359,6 +373,11 @@
                                     "return retorno;"
                                 ]
                             },
+                            "configAlternates": {
+                                "designer|params": "typedarray",
+                                "fn": "string",
+                                "implHandler": "code"
+                            },
                             "name": "renderer",
                             "designerId": "0ef7e4ed-ac74-4695-95dc-6c999d315fc4"
                         }
@@ -376,11 +395,12 @@
                         "hidden": true,
                         "text": "Acciones"
                     },
-                    "name": "MyColumn7",
                     "configAlternates": {
                         "flex": "number",
-                        "text": "string"
+                        "text": "string",
+                        "hidden": "boolean"
                     },
+                    "name": "MyColumn7",
                     "designerId": "fd115d59-768c-48d2-a6bd-9cd97c2c1abc",
                     "cn": [
                         {
@@ -440,12 +460,12 @@
                                     "return Ext.String.format('<div id=\"{0}\"></div>', id);"
                                 ]
                             },
-                            "name": "renderer",
                             "configAlternates": {
                                 "designer|params": "typedarray",
                                 "fn": "string",
                                 "implHandler": "code"
                             },
+                            "name": "renderer",
                             "designerId": "88b1e4d1-3758-4e2c-ab0b-15ea8dca103d"
                         }
                     ]
@@ -477,7 +497,6 @@
                 "dock": "bottom",
                 "layout": "hbox"
             },
-            "name": "MyContainer4",
             "configAlternates": {
                 "container|align": "string",
                 "container|pack": "string",
@@ -487,6 +506,7 @@
                 "id": "string",
                 "layout": "string"
             },
+            "name": "MyContainer4",
             "designerId": "7530e1f3-488f-42a2-80f0-ece7ea48f1b3",
             "cn": [
                 {
@@ -502,13 +522,13 @@
                         "text": "Registrar",
                         "width": 100
                     },
-                    "name": "MyButton4",
                     "configAlternates": {
                         "hidden": "boolean",
                         "id": "string",
                         "text": "string",
                         "width": "auto"
                     },
+                    "name": "MyButton4",
                     "designerId": "2a454311-6b1c-427d-bb39-b52519da333a",
                     "cn": [
                         {
@@ -528,13 +548,13 @@
                                 "name": "click",
                                 "scope": "me"
                             },
-                            "name": "onBtn_registrar_usuarioClick",
                             "configAlternates": {
                                 "fn": "string",
                                 "implHandler": "code",
                                 "name": "string",
                                 "scope": "string"
                             },
+                            "name": "onBtn_registrar_usuarioClick",
                             "designerId": "ec0a982a-f9ec-4aca-88e3-77d5f89282ed"
                         }
                     ]
@@ -553,7 +573,6 @@
                         "text": "Eliminar",
                         "width": 100
                     },
-                    "name": "MyButton8",
                     "configAlternates": {
                         "hidden": "boolean",
                         "id": "string",
@@ -561,6 +580,7 @@
                         "width": "auto",
                         "margin": "auto"
                     },
+                    "name": "MyButton8",
                     "designerId": "14c1f1bf-78a1-4318-a6d2-e1e8119e8766",
                     "cn": [
                         {
@@ -621,13 +641,13 @@
                                 "name": "click",
                                 "scope": "me"
                             },
-                            "name": "onBtn_eliminar_cancionClick",
                             "configAlternates": {
                                 "fn": "string",
                                 "implHandler": "code",
                                 "name": "string",
                                 "scope": "string"
                             },
+                            "name": "onBtn_eliminar_cancionClick",
                             "designerId": "b192d73d-cb05-4a30-9416-b33c9b06cd1c"
                         }
                     ]

@@ -19,7 +19,6 @@
         "title": "REGISTRO USUARIO SRMUSICAL",
         "width": 500
     },
-    "name": "MyWindow",
     "configAlternates": {
         "autoShow": "boolean",
         "designer|userAlias": "string",
@@ -34,6 +33,7 @@
         "layout": "string",
         "scrollable": "boolean"
     },
+    "name": "MyWindow",
     "designerId": "1c161978-a859-4768-a916-bb115efb9955",
     "viewControllerInstanceId": "b1382781-8d10-4db0-80de-e46b94ebfb1d",
     "viewModelInstanceId": "62532577-921a-4de9-8524-6c91851a6131",
@@ -57,7 +57,6 @@
                 "title": "Nuevo usuario",
                 "width": null
             },
-            "name": "MyForm1",
             "configAlternates": {
                 "bodyPadding": "auto",
                 "container|align": "string",
@@ -71,6 +70,7 @@
                 "id": "string",
                 "scrollable": "boolean"
             },
+            "name": "MyForm1",
             "designerId": "fd8fc1ad-7dd8-4be0-abc8-7176d4f70b11",
             "cn": [
                 {
@@ -99,7 +99,6 @@
                         "validateBlank": true,
                         "width": 380
                     },
-                    "name": "MyTextField2",
                     "configAlternates": {
                         "allowBlank": "boolean",
                         "blankText": "string",
@@ -119,6 +118,7 @@
                         "minLengthText": "string",
                         "name": "string"
                     },
+                    "name": "MyTextField2",
                     "designerId": "668de1f8-c145-444d-9f51-0c9197a47756",
                     "cn": [
                         {
@@ -134,11 +134,11 @@
                                     "<span style=\\\"color:black;\\\" data-qtip=\\\"Requerido\\\"> (*)</span>"
                                 ]
                             },
-                            "name": "afterLabelTextTpl",
                             "configAlternates": {
                                 "designer|displayName": "string",
                                 "implHandler": "code"
                             },
+                            "name": "afterLabelTextTpl",
                             "designerId": "57026169-1a3f-49ad-afb9-9937ded737bd"
                         }
                     ]
@@ -167,7 +167,6 @@
                         "name": "apellidos",
                         "validateBlank": true
                     },
-                    "name": "MyTextField3",
                     "configAlternates": {
                         "blankText": "string",
                         "designer|createAlias": "string",
@@ -185,6 +184,7 @@
                         "minLengthText": "string",
                         "name": "string"
                     },
+                    "name": "MyTextField3",
                     "designerId": "0d4df0a4-b2f2-43c2-b973-6001be9de5a4"
                 },
                 {
@@ -211,7 +211,6 @@
                         "name": "loginUsername",
                         "validateBlank": true
                     },
-                    "name": "MyTextField9",
                     "configAlternates": {
                         "blankText": "string",
                         "designer|createAlias": "string",
@@ -223,8 +222,14 @@
                         "validateBlank": "boolean",
                         "labelSeparator": "string",
                         "labelWidth": "number",
-                        "name": "string"
+                        "name": "string",
+                        "allowBlank": "boolean",
+                        "maxLength": "number",
+                        "maxLengthText": "string",
+                        "minLength": "number",
+                        "minLengthText": "string"
                     },
+                    "name": "MyTextField9",
                     "designerId": "f3c34538-db40-4501-ace3-ebdfec891f82",
                     "cn": [
                         {
@@ -240,11 +245,11 @@
                                     "<span style=\\\"color:black;\\\" data-qtip=\\\"Requerido\\\"> (*)</span>"
                                 ]
                             },
-                            "name": "afterLabelTextTpl",
                             "configAlternates": {
                                 "designer|displayName": "string",
                                 "implHandler": "code"
                             },
+                            "name": "afterLabelTextTpl",
                             "designerId": "86dd4546-2410-40d2-887b-b0e18ed99ce7"
                         }
                     ]
@@ -277,7 +282,6 @@
                         "name": "loginPassword",
                         "validateBlank": true
                     },
-                    "name": "MyTextField8",
                     "configAlternates": {
                         "allowBlank": "boolean",
                         "blankText": "string",
@@ -292,8 +296,16 @@
                         "validateBlank": "boolean",
                         "labelSeparator": "string",
                         "labelWidth": "number",
-                        "name": "string"
+                        "name": "string",
+                        "enableKeyEvents": "boolean",
+                        "enforceMaxLength": "boolean",
+                        "inputType": "string",
+                        "maxLength": "number",
+                        "maxLengthText": "string",
+                        "minLength": "number",
+                        "minLengthText": "string"
                     },
+                    "name": "MyTextField8",
                     "designerId": "424b76ea-d0bb-477c-866c-2e8fff014e1a",
                     "cn": [
                         {
@@ -309,11 +321,11 @@
                                     "<span style=\\\"color:black;\\\" data-qtip=\\\"Requerido\\\"> (*)</span>"
                                 ]
                             },
-                            "name": "afterLabelTextTpl",
                             "configAlternates": {
                                 "designer|displayName": "string",
                                 "implHandler": "code"
                             },
+                            "name": "afterLabelTextTpl",
                             "designerId": "1bf6ea83-5aec-4e4d-88a4-76eb043c2698"
                         },
                         {
@@ -337,6 +349,11 @@
                                     "    return SRMusicalWeb.globals.MSJPASSWORDREGEX;",
                                     "}"
                                 ]
+                            },
+                            "configAlternates": {
+                                "designer|params": "typedarray",
+                                "fn": "string",
+                                "implHandler": "code"
                             },
                             "name": "validator",
                             "designerId": "c67d8e3b-1064-4c31-ab05-61bcc50dba38"
@@ -420,6 +437,12 @@
                                 "name": "keyup",
                                 "scope": "me"
                             },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
                             "name": "onTxt_password_usuarioKeyup",
                             "designerId": "c21c3593-dc22-436e-bec4-d6dd306348f9"
                         }
@@ -442,6 +465,16 @@
                         "margin": " 0 0 5 0",
                         "minHeight": 15
                     },
+                    "configAlternates": {
+                        "container|align": "string",
+                        "container|pack": "string",
+                        "designer|displayName": "string",
+                        "hidden": "boolean",
+                        "layout": "string",
+                        "layout|flex": "number",
+                        "margin": "auto",
+                        "minHeight": "number"
+                    },
                     "name": "MyContainer24",
                     "designerId": "d57034bf-d40f-4244-9d2c-a8b080b02739",
                     "cn": [
@@ -461,6 +494,15 @@
                                 "maxHeight": 7,
                                 "maxWidth": 7
                             },
+                            "configAlternates": {
+                                "container|align": "string",
+                                "designer|displayName": "string",
+                                "layout": "string",
+                                "layout|flex": "number",
+                                "margin": "auto",
+                                "maxHeight": "number",
+                                "maxWidth": "number"
+                            },
                             "name": "MyContainer25",
                             "designerId": "7ab11d4a-8ec1-4887-bc38-3f58a648aa47",
                             "cn": [
@@ -476,6 +518,10 @@
                                             "ctn-password"
                                         ],
                                         "id": "ctn_newpass_uno"
+                                    },
+                                    "configAlternates": {
+                                        "cls": "typedarray",
+                                        "id": "string"
                                     },
                                     "name": "MyContainer26",
                                     "designerId": "5db987c8-8aca-4e01-bf4f-53a2b5b1cdeb"
@@ -493,6 +539,10 @@
                                         ],
                                         "id": "ctn_newpass_dos"
                                     },
+                                    "configAlternates": {
+                                        "cls": "typedarray",
+                                        "id": "string"
+                                    },
                                     "name": "MyContainer27",
                                     "designerId": "1d36f693-3c6d-41d9-a77b-62c911563d04"
                                 },
@@ -508,6 +558,10 @@
                                             "ctn-password"
                                         ],
                                         "id": "ctn_newpass_tres"
+                                    },
+                                    "configAlternates": {
+                                        "cls": "typedarray",
+                                        "id": "string"
                                     },
                                     "name": "MyContainer28",
                                     "designerId": "47f90e13-f305-4fa0-962a-46673bf845b3"
@@ -531,6 +585,16 @@
                                 "maxWidth": 20,
                                 "value": null
                             },
+                            "configAlternates": {
+                                "fieldCls": "string",
+                                "fieldLabel": "string",
+                                "id": "string",
+                                "layout|flex": "number",
+                                "margin": "auto",
+                                "maxHeight": "number",
+                                "maxWidth": "number",
+                                "value": "string"
+                            },
                             "name": "MyDisplayField",
                             "designerId": "99d0c663-dc50-46d9-a030-3d1773a9030d"
                         },
@@ -550,6 +614,16 @@
                                 "maxHeight": 20,
                                 "maxWidth": 20,
                                 "value": null
+                            },
+                            "configAlternates": {
+                                "fieldCls": "string",
+                                "fieldLabel": "string",
+                                "id": "string",
+                                "labelAlign": "string",
+                                "layout|flex": "number",
+                                "maxHeight": "number",
+                                "maxWidth": "number",
+                                "value": "string"
                             },
                             "name": "MyDisplayField1",
                             "designerId": "7bddc5b8-5fc9-47d4-bc96-2ea2511ec337"
@@ -582,7 +656,6 @@
                         "name": "loginPasswordValidar",
                         "validateBlank": true
                     },
-                    "name": "MyTextField10",
                     "configAlternates": {
                         "allowBlank": "boolean",
                         "blankText": "string",
@@ -597,8 +670,14 @@
                         "validateBlank": "boolean",
                         "labelSeparator": "string",
                         "labelWidth": "number",
-                        "name": "string"
+                        "name": "string",
+                        "inputType": "string",
+                        "maxLength": "number",
+                        "maxLengthText": "string",
+                        "minLength": "number",
+                        "minLengthText": "string"
                     },
+                    "name": "MyTextField10",
                     "designerId": "e3409d18-db01-413a-90bd-474a8912bf5e",
                     "cn": [
                         {
@@ -614,11 +693,11 @@
                                     "<span style=\\\"color:black;\\\" data-qtip=\\\"Requerido\\\"> (*)</span>"
                                 ]
                             },
-                            "name": "afterLabelTextTpl",
                             "configAlternates": {
                                 "designer|displayName": "string",
                                 "implHandler": "code"
                             },
+                            "name": "afterLabelTextTpl",
                             "designerId": "44c162ca-f3d6-4b4c-a99b-dfcbe096cbca"
                         }
                     ]
@@ -646,7 +725,6 @@
                         "vtype": "email",
                         "vtypeText": "Este campo debe ser una dirección de correo electrónico: example@gmail.com"
                     },
-                    "name": "MyTextField4",
                     "configAlternates": {
                         "allowBlank": "boolean",
                         "blankText": "string",
@@ -660,8 +738,13 @@
                         "labelWidth": "number",
                         "name": "string",
                         "vtype": "string",
-                        "vtypeText": "string"
+                        "vtypeText": "string",
+                        "maxLength": "number",
+                        "maxLengthText": "string",
+                        "minLength": "number",
+                        "minLengthText": "string"
                     },
+                    "name": "MyTextField4",
                     "designerId": "e81bd492-ae9f-4b37-8f42-7859dcdf6fc5"
                 },
                 {
@@ -689,7 +772,6 @@
                         "validateBlank": true,
                         "vtype": null
                     },
-                    "name": "MyTextField5",
                     "configAlternates": {
                         "allowBlank": "boolean",
                         "blankText": "string",
@@ -701,8 +783,15 @@
                         "validateBlank": "boolean",
                         "labelSeparator": "string",
                         "labelWidth": "number",
-                        "name": "string"
+                        "name": "string",
+                        "maskRe": "regex",
+                        "maxLength": "number",
+                        "maxLengthText": "string",
+                        "minLength": "number",
+                        "minLengthText": "string",
+                        "vtype": "string"
                     },
+                    "name": "MyTextField5",
                     "designerId": "5a6f91ef-1304-45b8-8d38-98b75ae23f16"
                 },
                 {
@@ -727,7 +816,6 @@
                         "name": "direccion",
                         "validateBlank": true
                     },
-                    "name": "MyTextField6",
                     "configAlternates": {
                         "allowBlank": "boolean",
                         "blankText": "string",
@@ -739,8 +827,12 @@
                         "validateBlank": "boolean",
                         "labelSeparator": "string",
                         "labelWidth": "number",
-                        "name": "string"
+                        "name": "string",
+                        "maxLength": "number",
+                        "maxLengthText": "string",
+                        "minLengthText": "string"
                     },
+                    "name": "MyTextField6",
                     "designerId": "336faf77-f978-4626-b113-b31433de8a32"
                 },
                 {
@@ -763,7 +855,6 @@
                         "name": "fechaNacimiento",
                         "validateBlank": true
                     },
-                    "name": "MyDateField",
                     "configAlternates": {
                         "allowBlank": "boolean",
                         "blankText": "string",
@@ -777,6 +868,7 @@
                         "labelWidth": "number",
                         "name": "string"
                     },
+                    "name": "MyDateField",
                     "designerId": "4854cb8c-d31e-49de-869a-eb3561167f17"
                 },
                 {
@@ -792,6 +884,13 @@
                         "designer|displayName": "ctn_cargo",
                         "layout": "vbox",
                         "layout|flex": null
+                    },
+                    "configAlternates": {
+                        "container|align": "string",
+                        "container|pack": "string",
+                        "designer|displayName": "string",
+                        "layout": "string",
+                        "layout|flex": "number"
                     },
                     "name": "MyContainer29",
                     "designerId": "0256546e-ada2-4d43-8d19-9b26f6ec11fb",
@@ -817,6 +916,18 @@
                                 "maxWidth": 20,
                                 "width": 20
                             },
+                            "configAlternates": {
+                                "cls": "typedarray",
+                                "height": "auto",
+                                "hidden": "boolean",
+                                "id": "string",
+                                "layout|flex": "number",
+                                "liquidLayout": "boolean",
+                                "margin": "auto",
+                                "maxHeight": "number",
+                                "maxWidth": "number",
+                                "width": "auto"
+                            },
                             "name": "MyComponent",
                             "designerId": "0526a9fb-36fd-4a63-b2f2-da87e55869a3"
                         },
@@ -840,7 +951,6 @@
                                 "labelWidth": 160,
                                 "layout|flex": null
                             },
-                            "name": "MyRadioGroup",
                             "configAlternates": {
                                 "blankText": "string",
                                 "designer|createAlias": "string",
@@ -851,8 +961,10 @@
                                 "id": "string",
                                 "layout|flex": "number",
                                 "labelSeparator": "string",
-                                "labelWidth": "number"
+                                "labelWidth": "number",
+                                "allowBlank": "boolean"
                             },
+                            "name": "MyRadioGroup",
                             "designerId": "dc713e65-23e6-4749-b4b5-4a46ea492d5b",
                             "cn": [
                                 {
@@ -873,7 +985,6 @@
                                         "inputValue": "Administrador",
                                         "name": "cargo"
                                     },
-                                    "name": "MyRadio",
                                     "configAlternates": {
                                         "boxLabel": "string",
                                         "designer|createAlias": "string",
@@ -882,8 +993,10 @@
                                         "fieldLabel": "string",
                                         "flex": "number",
                                         "id": "string",
-                                        "name": "string"
+                                        "name": "string",
+                                        "inputValue": "string"
                                     },
+                                    "name": "MyRadio",
                                     "designerId": "b3584cef-4348-42b7-ab3c-b0de855fbfe8"
                                 },
                                 {
@@ -909,7 +1022,6 @@
                                         "name": "cargo",
                                         "tabIndex": null
                                     },
-                                    "name": "MyRadio1",
                                     "configAlternates": {
                                         "boxLabel": "string",
                                         "boxLabelAlign": "string",
@@ -923,8 +1035,10 @@
                                         "maxHeight": "number",
                                         "minHeight": "number",
                                         "name": "string",
-                                        "tabIndex": "number"
+                                        "tabIndex": "number",
+                                        "inputValue": "string"
                                     },
+                                    "name": "MyRadio1",
                                     "designerId": "e11a2d12-1dd2-4ba1-8eea-54898b3b780e"
                                 },
                                 {
@@ -940,11 +1054,11 @@
                                             "<span style=\\\"color:black;\\\" data-qtip=\\\"Requerido\\\"> (*)</span>"
                                         ]
                                     },
-                                    "name": "afterLabelTextTpl",
                                     "configAlternates": {
                                         "designer|displayName": "string",
                                         "implHandler": "code"
                                     },
+                                    "name": "afterLabelTextTpl",
                                     "designerId": "f844de13-8bfd-4a18-ac7b-44cead1c68f1"
                                 },
                                 {
@@ -963,6 +1077,12 @@
                                         ],
                                         "name": "change",
                                         "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
                                     },
                                     "name": "onRad_ocupacion_usuarioChange",
                                     "designerId": "9f2ec012-1143-42d8-aa26-1d03f0f31e8a"
@@ -989,7 +1109,6 @@
                         "layout": "hbox",
                         "width": 496
                     },
-                    "name": "MyContainer2",
                     "configAlternates": {
                         "alignTarget": "string",
                         "container|align": "string",
@@ -1001,6 +1120,7 @@
                         "width": "auto",
                         "designer|displayName": "string"
                     },
+                    "name": "MyContainer2",
                     "designerId": "31957a57-e4d1-4e0b-ae7b-53ac9fcb22ee",
                     "cn": [
                         {
@@ -1016,13 +1136,13 @@
                                 "text": "CANCELAR",
                                 "width": 100
                             },
-                            "name": "MyButton9",
                             "configAlternates": {
                                 "designer|displayName": "string",
                                 "margin": "auto",
                                 "text": "string",
                                 "width": "auto"
                             },
+                            "name": "MyButton9",
                             "designerId": "cc564751-bba8-43ee-a465-1d810d5989aa",
                             "cn": [
                                 {
@@ -1041,13 +1161,13 @@
                                         "name": "click",
                                         "scope": "me"
                                     },
-                                    "name": "onButtonClick",
                                     "configAlternates": {
                                         "fn": "string",
                                         "implHandler": "code",
                                         "name": "string",
                                         "scope": "string"
                                     },
+                                    "name": "onButtonClick",
                                     "designerId": "d90e9951-7fbf-4f34-9805-43e356dc2487"
                                 }
                             ]
@@ -1066,7 +1186,6 @@
                                 "text": "AGREGAR",
                                 "width": 100
                             },
-                            "name": "MyButton2",
                             "configAlternates": {
                                 "designer|createAlias": "string",
                                 "designer|displayName": "string",
@@ -1074,6 +1193,7 @@
                                 "text": "string",
                                 "width": "auto"
                             },
+                            "name": "MyButton2",
                             "designerId": "449b4186-e477-4659-a0b8-18df48f99e29",
                             "cn": [
                                 {
@@ -1143,13 +1263,13 @@
                                         "name": "click",
                                         "scope": "me"
                                     },
-                                    "name": "onBtn_guardar_usuarioClick",
                                     "configAlternates": {
                                         "fn": "string",
                                         "implHandler": "code",
                                         "name": "string",
                                         "scope": "string"
                                     },
+                                    "name": "onBtn_guardar_usuarioClick",
                                     "designerId": "9e17d842-aadc-4058-9318-0cd814de4246"
                                 }
                             ]
@@ -1167,13 +1287,13 @@
                                 "text": "GUARDAR",
                                 "width": 100
                             },
-                            "name": "MyButton10",
                             "configAlternates": {
                                 "hidden": "boolean",
                                 "id": "string",
                                 "text": "string",
                                 "width": "auto"
                             },
+                            "name": "MyButton10",
                             "designerId": "dc36c40a-5e5e-4f44-9b37-5b2fb6402443",
                             "cn": [
                                 {
@@ -1247,13 +1367,13 @@
                                         "name": "click",
                                         "scope": "me"
                                     },
-                                    "name": "onBtn_accion_guardarClick",
                                     "configAlternates": {
                                         "fn": "string",
                                         "implHandler": "code",
                                         "name": "string",
                                         "scope": "string"
                                     },
+                                    "name": "onBtn_accion_guardarClick",
                                     "designerId": "e86c85d9-1a84-425d-b1d2-af7b72350627"
                                 }
                             ]
@@ -1286,6 +1406,11 @@
                     "",
                     "Ext.getCmp('txt_password_usuario_rep').setValue(record.data.loginPassword);"
                 ]
+            },
+            "configAlternates": {
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code"
             },
             "name": "cargarDatos",
             "designerId": "d839e498-51fb-475d-a1e1-5b86b1133a56"

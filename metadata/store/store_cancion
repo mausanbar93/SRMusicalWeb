@@ -10,6 +10,11 @@
         "model": "model_cancion",
         "storeId": "store_cancion"
     },
+    "configAlternates": {
+        "designer|userClassName": "string",
+        "model": "model",
+        "storeId": "string"
+    },
     "name": "MyJsonStore",
     "designerId": "964b6382-7081-4047-a53e-bf17a6d9f2f3",
     "cn": [
@@ -30,6 +35,9 @@
                     "}"
                 ]
             },
+            "configAlternates": {
+                "api": "object"
+            },
             "name": "MyAjaxProxy",
             "designerId": "222396e4-c6fa-4433-96ed-9bff88d4d459",
             "cn": [
@@ -44,6 +52,10 @@
                         "messageProperty": "message",
                         "rootProperty": "data"
                     },
+                    "configAlternates": {
+                        "messageProperty": "string",
+                        "rootProperty": "string"
+                    },
                     "name": "MyJsonReader",
                     "designerId": "3c287086-8763-42d4-be03-d59bd8317436"
                 },
@@ -56,6 +68,9 @@
                     "codeClass": null,
                     "userConfig": {
                         "allowSingle": false
+                    },
+                    "configAlternates": {
+                        "allowSingle": "boolean"
                     },
                     "name": "MyJsonWriter",
                     "designerId": "f294c5a3-b25b-4c25-bc39-ec91883177ac"
@@ -74,6 +89,12 @@
                         ],
                         "name": "exception",
                         "scope": "me"
+                    },
+                    "configAlternates": {
+                        "fn": "string",
+                        "implHandler": "code",
+                        "name": "string",
+                        "scope": "string"
                     },
                     "name": "onAjaxException",
                     "designerId": "f51aad7d-71ce-46d9-99e2-9a454efede2d"

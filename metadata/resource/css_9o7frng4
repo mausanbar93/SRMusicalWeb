@@ -10,11 +10,11 @@
         "id": "Styles",
         "url": "resources/css/styles.css"
     },
-    "name": "css",
     "configAlternates": {
         "designer|userClassName": "string",
         "id": "string",
         "url": "uri"
     },
+    "name": "css",
     "designerId": "083486ef-3adc-4e8e-b7ac-80114b326c52"
 }

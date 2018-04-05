@@ -43,7 +43,6 @@
                 "layout": "hbox",
                 "layout|flex": null
             },
-            "name": "MyContainer3",
             "configAlternates": {
                 "cls": "typedarray",
                 "container|align": "string",
@@ -55,6 +54,7 @@
                 "layout": "string",
                 "layout|flex": "number"
             },
+            "name": "MyContainer3",
             "designerId": "899cfed1-43a1-4b2d-b2e0-bba4f5822a5e",
             "cn": [
                 {
@@ -75,7 +75,6 @@
                         "layout|flex": null,
                         "width": null
                     },
-                    "name": "MyContainer12",
                     "configAlternates": {
                         "container|align": "string",
                         "container|pack": "string",
@@ -87,6 +86,7 @@
                         "layout|flex": "number",
                         "width": "auto"
                     },
+                    "name": "MyContainer12",
                     "designerId": "8e313282-a9cb-4c3b-bddc-cbfb27a75e87",
                     "cn": [
                         {
@@ -103,7 +103,6 @@
                                 "src": "resources/images/home.svg",
                                 "width": 40
                             },
-                            "name": "MyImg1",
                             "configAlternates": {
                                 "designer|displayName": "string",
                                 "height": "auto",
@@ -111,6 +110,7 @@
                                 "src": "uri",
                                 "width": "auto"
                             },
+                            "name": "MyImg1",
                             "designerId": "337d5284-6e31-4d17-b419-1dee1c30a543"
                         },
                         {
@@ -125,12 +125,12 @@
                                 "maxHeight": null,
                                 "text": "Menú Principal"
                             },
-                            "name": "MyButton6",
                             "configAlternates": {
                                 "height": "auto",
                                 "maxHeight": "number",
                                 "text": "string"
                             },
+                            "name": "MyButton6",
                             "designerId": "286257c4-ffb0-4912-8a63-1189c36669c5",
                             "cn": [
                                 {
@@ -150,13 +150,13 @@
                                         "name": "click",
                                         "scope": "me"
                                     },
-                                    "name": "onButtonClick",
                                     "configAlternates": {
                                         "fn": "string",
                                         "implHandler": "code",
                                         "name": "string",
                                         "scope": "string"
                                     },
+                                    "name": "onButtonClick",
                                     "designerId": "61dfb1f9-d1c9-4106-a3ee-7d0ad37fc269"
                                 }
                             ]
@@ -181,11 +181,18 @@
                         "layout|flex": 1,
                         "padding": null
                     },
-                    "name": "MyContainer8",
                     "configAlternates": {
                         "designer|displayName": "string",
-                        "layout|flex": "number"
+                        "layout|flex": "number",
+                        "autoRender": "boolean",
+                        "container|align": "string",
+                        "container|pack": "string",
+                        "container|padding": "auto",
+                        "id": "string",
+                        "layout": "string",
+                        "padding": "auto"
                     },
+                    "name": "MyContainer8",
                     "designerId": "f38f0717-bff4-48b9-b192-2533e114fb0e",
                     "cn": [
                         {
@@ -202,6 +209,14 @@
                                 "dock": "left",
                                 "layout": "hbox",
                                 "layout|flex": null
+                            },
+                            "configAlternates": {
+                                "container|align": "string",
+                                "container|pack": "string",
+                                "designer|displayName": "string",
+                                "dock": "string",
+                                "layout": "string",
+                                "layout|flex": "number"
                             },
                             "name": "MyContainer21",
                             "designerId": "74583d0f-29cc-4508-a299-75ef7d20ab54",
@@ -221,6 +236,14 @@
                                         "src": "resources/images/logo_innovacion.png",
                                         "width": null
                                     },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "dock": "string",
+                                        "height": "auto",
+                                        "layout|flex": "number",
+                                        "src": "uri",
+                                        "width": "auto"
+                                    },
                                     "name": "MyImg3",
                                     "designerId": "c165feb8-3275-4166-9930-0863665a36a0"
                                 }
@@ -237,6 +260,11 @@
                                 "designer|displayName": "ctn_espacio",
                                 "hidden": true,
                                 "layout|flex": 1
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "hidden": "boolean",
+                                "layout|flex": "number"
                             },
                             "name": "MyContainer8",
                             "designerId": "951c9fe7-8fd6-48f4-ad50-a17352459eab"
@@ -256,6 +284,14 @@
                                 "layout": "hbox",
                                 "layout|flex": null
                             },
+                            "configAlternates": {
+                                "container|align": "string",
+                                "container|pack": "string",
+                                "designer|displayName": "string",
+                                "dock": "string",
+                                "layout": "string",
+                                "layout|flex": "number"
+                            },
                             "name": "MyContainer22",
                             "designerId": "2e08f25c-c734-434c-8e93-975455c7c6af",
                             "cn": [
@@ -274,6 +310,15 @@
                                         "margin": null,
                                         "src": "resources/images/logo_unimayor_horizontal.png",
                                         "width": null
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "dock": "string",
+                                        "height": "auto",
+                                        "layout|flex": "number",
+                                        "margin": "auto",
+                                        "src": "uri",
+                                        "width": "auto"
                                     },
                                     "name": "MyImg4",
                                     "designerId": "e1122ad1-2928-4724-b5e2-b786a1fc450e"
@@ -297,7 +342,6 @@
                         "layout|flex": null,
                         "margin": "0 10 0 0"
                     },
-                    "name": "MyContainer13",
                     "configAlternates": {
                         "container|align": "string",
                         "container|pack": "string",
@@ -306,6 +350,7 @@
                         "layout|flex": "number",
                         "margin": "auto"
                     },
+                    "name": "MyContainer13",
                     "designerId": "b8f6d860-46b4-4582-86fa-a6c45288c4fc",
                     "cn": [
                         {
@@ -320,12 +365,12 @@
                                 "layout|flex": null,
                                 "text": "Usuario (Cargo)"
                             },
-                            "name": "MyLabel3",
                             "configAlternates": {
                                 "id": "string",
                                 "layout|flex": "number",
                                 "text": "string"
                             },
+                            "name": "MyLabel3",
                             "designerId": "746c3975-3c49-4c9b-a43d-a74a785103ae"
                         }
                     ]
@@ -345,7 +390,6 @@
                         "maxHeight": null,
                         "text": "Cerrar sesión"
                     },
-                    "name": "MyButton5",
                     "configAlternates": {
                         "designer|displayName": "string",
                         "height": "auto",
@@ -354,6 +398,7 @@
                         "maxHeight": "number",
                         "text": "string"
                     },
+                    "name": "MyButton5",
                     "designerId": "bd69dcf8-74db-4006-8ebd-e47226b5988d",
                     "cn": [
                         {
@@ -373,13 +418,13 @@
                                 "name": "click",
                                 "scope": "me"
                             },
-                            "name": "onBtn_cerrar_sesionClick",
                             "configAlternates": {
                                 "fn": "string",
                                 "implHandler": "code",
                                 "name": "string",
                                 "scope": "string"
                             },
+                            "name": "onBtn_cerrar_sesionClick",
                             "designerId": "27fc5796-98fa-4a00-a3ea-726cad19cfa4"
                         }
                     ]
@@ -397,6 +442,10 @@
                 "designer|displayName": "ctn_vista_admin",
                 "layout|flex": null
             },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "layout|flex": "number"
+            },
             "name": "ctn_vista_admin1",
             "designerId": "64f6abdb-ce79-4ebc-a79f-7e355e839ad7",
             "masterInstanceId": "ceecab37-3081-431c-93d4-c10e25abe780"
@@ -411,6 +460,10 @@
             "userConfig": {
                 "hidden": true,
                 "layout|flex": null
+            },
+            "configAlternates": {
+                "hidden": "boolean",
+                "layout|flex": "number"
             },
             "name": "ctn_vista_cliente1",
             "designerId": "24006c91-03d4-440e-8553-644e7923b1a9",
@@ -430,13 +483,14 @@
                 "id": "ctn_cuerpo",
                 "layout|flex": null
             },
-            "name": "MyContainer11",
             "configAlternates": {
                 "designer|displayName": "string",
                 "flex": "number",
                 "id": "string",
-                "layout|flex": "number"
+                "layout|flex": "number",
+                "hidden": "boolean"
             },
+            "name": "MyContainer11",
             "designerId": "a98c34b8-86b4-45d7-a374-b26ab1bb65f6"
         }
     ]

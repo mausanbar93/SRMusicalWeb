@@ -10,11 +10,11 @@
         "designer|userClassName": "Library",
         "theme": "MyTritonTheme"
     },
-    "name": "Library",
     "configAlternates": {
         "basePath": "uri",
         "designer|userClassName": "string",
         "theme": "string"
     },
+    "name": "Library",
     "designerId": "d6da57da-9937-4be9-8a51-698f582ebebe"
 }

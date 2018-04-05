@@ -9,10 +9,10 @@
         "designer|userAlias": "pnl_cancion",
         "designer|userClassName": "pnl_usuarioViewController1"
     },
-    "name": "pnl_usuarioViewController1",
     "configAlternates": {
         "designer|userAlias": "string",
         "designer|userClassName": "string"
     },
+    "name": "pnl_usuarioViewController1",
     "designerId": "6e21c597-3dec-47c8-aff9-228c29df0dc1"
 }

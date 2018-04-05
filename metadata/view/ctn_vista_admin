@@ -16,7 +16,6 @@
         "layout": "hbox",
         "padding": 50
     },
-    "name": "MyContainer1",
     "configAlternates": {
         "container|align": "string",
         "container|pack": "string",
@@ -26,8 +25,11 @@
         "id": "string",
         "layout": "string",
         "layout|flex": "number",
-        "padding": "auto"
+        "padding": "auto",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
     },
+    "name": "MyContainer1",
     "designerId": "ceecab37-3081-431c-93d4-c10e25abe780",
     "viewControllerInstanceId": "c877c17b-c102-4b2c-a479-e0a4d897e427",
     "viewModelInstanceId": "12f07b58-e209-4162-8ec8-c94cac95f972",
@@ -50,7 +52,6 @@
                 "layout|flex": null,
                 "margin": null
             },
-            "name": "MyContainer",
             "configAlternates": {
                 "cls": "typedarray",
                 "container|align": "string",
@@ -60,6 +61,7 @@
                 "layout|flex": "number",
                 "margin": "auto"
             },
+            "name": "MyContainer",
             "designerId": "e70adf24-eb3f-4247-8d43-2d811cf1f5d6",
             "cn": [
                 {
@@ -78,7 +80,6 @@
                         "src": "resources/images/usuarios.svg",
                         "width": null
                     },
-                    "name": "MyImg",
                     "configAlternates": {
                         "cls": "typedarray",
                         "designer|displayName": "string",
@@ -86,6 +87,7 @@
                         "src": "uri",
                         "width": "auto"
                     },
+                    "name": "MyImg",
                     "designerId": "ff6c5b18-b50f-4bf0-bf81-56fa2d83b08c"
                 },
                 {
@@ -104,7 +106,6 @@
                         "text": "Usuarios",
                         "width": null
                     },
-                    "name": "MyButton1",
                     "configAlternates": {
                         "baseCls": "string",
                         "cls": "string",
@@ -114,6 +115,7 @@
                         "text": "string",
                         "width": "auto"
                     },
+                    "name": "MyButton1",
                     "designerId": "25d005f0-c180-4e2b-af5e-a6cd510947dc",
                     "cn": [
                         {
@@ -135,13 +137,13 @@
                                 "name": "click",
                                 "scope": "me"
                             },
-                            "name": "onButtonClick1",
                             "configAlternates": {
                                 "fn": "string",
                                 "implHandler": "code",
                                 "name": "string",
                                 "scope": "string"
                             },
+                            "name": "onButtonClick1",
                             "designerId": "202faebb-47e5-486a-9cc2-5f3ce5255d24"
                         }
                     ]
@@ -166,7 +168,6 @@
                 "layout|flex": null,
                 "margin": null
             },
-            "name": "MyContainer2",
             "configAlternates": {
                 "cls": "typedarray",
                 "container|align": "string",
@@ -176,6 +177,7 @@
                 "layout|flex": "number",
                 "margin": "auto"
             },
+            "name": "MyContainer2",
             "designerId": "52c5ebc4-2279-42d4-8a97-2a633f7696b0",
             "cn": [
                 {
@@ -195,14 +197,15 @@
                         "src": "resources/images/canciones.svg",
                         "width": null
                     },
-                    "name": "MyImg",
                     "configAlternates": {
                         "cls": "typedarray",
                         "designer|displayName": "string",
                         "height": "auto",
                         "src": "uri",
-                        "width": "auto"
+                        "width": "auto",
+                        "padding": "auto"
                     },
+                    "name": "MyImg",
                     "designerId": "835bb127-8e5d-4a7b-a584-5f9ac8052c44"
                 },
                 {
@@ -218,13 +221,13 @@
                         "text": "Canciones",
                         "width": null
                     },
-                    "name": "MyButton3",
                     "configAlternates": {
                         "height": "auto",
                         "layout|flex": "number",
                         "text": "string",
                         "width": "auto"
                     },
+                    "name": "MyButton3",
                     "designerId": "21bb6473-5aa6-42d9-9586-ab3127db5d45",
                     "cn": [
                         {
@@ -246,13 +249,13 @@
                                 "name": "click",
                                 "scope": "me"
                             },
-                            "name": "onButtonClick2",
                             "configAlternates": {
                                 "fn": "string",
                                 "implHandler": "code",
                                 "name": "string",
                                 "scope": "string"
                             },
+                            "name": "onButtonClick2",
                             "designerId": "f6702e9d-2731-488b-8994-74fb4ca145c5"
                         }
                     ]

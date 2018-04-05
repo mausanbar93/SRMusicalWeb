@@ -8,6 +8,9 @@
     "userConfig": {
         "designer|userClassName": "model_sesion"
     },
+    "configAlternates": {
+        "designer|userClassName": "string"
+    },
     "name": "MyModel",
     "designerId": "66d021bf-5498-4f6e-b68f-466d6d3e8371"
 }
