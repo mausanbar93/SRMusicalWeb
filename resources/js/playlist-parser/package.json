@@ -1,0 +1,38 @@
+{
+  "name": "playlist-parser",
+  "version": "0.0.12",
+  "description": "Parse m3u, m3u extended, and pls",
+  "main": "lib/parser.min.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nickdesaulniers/javascript-playlist-parser.git"
+  },
+  "keywords": [
+    "javascript",
+    "playlist",
+    "parse",
+    "m3u",
+    "pls",
+    "asx"
+  ],
+  "author": "Nick Desaulniers",
+  "license": "Dual MIT & Beerware",
+  "bugs": {
+    "url": "https://github.com/nickdesaulniers/javascript-playlist-parser/issues"
+  },
+  "devDependencies": {
+    "chai": "1.7.2",
+    "grunt-contrib-coffee": "0.7.0",
+    "grunt-mocha-test": "0.6.3",
+    "grunt-contrib-uglify": "~0.2.4"
+  },
+  "dependencies": {
+    "xmldom": "0.1.21"
+  }
+}
